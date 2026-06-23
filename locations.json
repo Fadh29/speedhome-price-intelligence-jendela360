@@ -1,0 +1,3430 @@
+[
+  {
+    "name": "1 Petaling, Kuala Lumpur",
+    "slug": "1-petaling-kuala-lumpur"
+  },
+  {
+    "name": "1 Sentul Condominium, Sentul",
+    "slug": "1-sentul-condominium-sentul"
+  },
+  {
+    "name": "121 Residences, Petaling Jaya",
+    "slug": "121-residences-petaling-jaya"
+  },
+  {
+    "name": "222 Residency, Setapak",
+    "slug": "222-residency-setapak"
+  },
+  {
+    "name": "228 Selayang Condominium, Batu Caves",
+    "slug": "228-selayang-condominium-batu-caves"
+  },
+  {
+    "name": "28 Boulevard 28 Blvd, Kuala Lumpur",
+    "slug": "28-boulevard-28-blvd-kuala-lumpur"
+  },
+  {
+    "name": "28 Boulevard Pandan Perdana",
+    "slug": "28-boulevard-pandan-perdana"
+  },
+  {
+    "name": "28 Residences Sepang",
+    "slug": "28-residences-sepang"
+  },
+  {
+    "name": "3 Elements, Seri Kembangan",
+    "slug": "3-elements-seri-kembangan"
+  },
+  {
+    "name": "3rdnvenue, Kuala Lumpur",
+    "slug": "3rdnvenue-kuala-lumpur"
+  },
+  {
+    "name": "8 Petaling, Kuala Lumpur",
+    "slug": "8-petaling-kuala-lumpur"
+  },
+  {
+    "name": "8scape, Johor Bahru",
+    "slug": "8scape-johor-bahru"
+  },
+  {
+    "name": "Acacia Residences Sepang",
+    "slug": "acacia-residences-sepang"
+  },
+  {
+    "name": "Acappella Residences, Shah Alam",
+    "slug": "acappella-residences-shah-alam"
+  },
+  {
+    "name": "Admiral Residences, Melaka",
+    "slug": "admiral-residences-melaka"
+  },
+  {
+    "name": "Akasia Apartment, Klang",
+    "slug": "akasia-apartment-klang"
+  },
+  {
+    "name": "Alam Idaman, Shah Alam",
+    "slug": "alam-idaman-shah-alam"
+  },
+  {
+    "name": "Alam Puri, Kuala Lumpur",
+    "slug": "alam-puri-kuala-lumpur"
+  },
+  {
+    "name": "Alam Sanjung, Shah Alam",
+    "slug": "alam-sanjung-shah-alam"
+  },
+  {
+    "name": "Alam Sari, Bangi",
+    "slug": "alam-sari-bangi"
+  },
+  {
+    "name": "Alanis Residence Sepang",
+    "slug": "alanis-residence-sepang"
+  },
+  {
+    "name": "Albury 2 Mahkota Hills, Lenggeng",
+    "slug": "albury-2-mahkota-hills-lenggeng"
+  },
+  {
+    "name": "Alinea Suites, Shah Alam",
+    "slug": "alinea-suites-shah-alam"
+  },
+  {
+    "name": "All Seasons Park Ayer Itam",
+    "slug": "all-seasons-park-ayer-itam"
+  },
+  {
+    "name": "Amara, Batu Caves",
+    "slug": "amara-batu-caves"
+  },
+  {
+    "name": "Amaya Maluri, Cheras",
+    "slug": "amaya-maluri-cheras"
+  },
+  {
+    "name": "Amber Cove Melaka City",
+    "slug": "amber-cove-melaka-city"
+  },
+  {
+    "name": "Amberside, Johor Bahru",
+    "slug": "amberside-johor-bahru"
+  },
+  {
+    "name": "Amcorp Serviced Suites, Petaling Jaya",
+    "slug": "amcorp-serviced-suites-petaling-jaya"
+  },
+  {
+    "name": "Ameera Residence, Kajang",
+    "slug": "ameera-residence-kajang"
+  },
+  {
+    "name": "Ampang, Kuala Lumpur",
+    "slug": "ampang"
+  },
+  {
+    "name": "Andira Park, Puchong",
+    "slug": "andira-park-puchong"
+  },
+  {
+    "name": "Angkasa Condominiums, Cheras",
+    "slug": "angkasa-condominiums-cheras"
+  },
+  {
+    "name": "Anyaman Residence, Kuala Lumpur",
+    "slug": "anyaman-residence-kuala-lumpur"
+  },
+  {
+    "name": "Apartment Harmoni, Petaling Jaya",
+    "slug": "apartment-harmoni-petaling-jaya"
+  },
+  {
+    "name": "Apartment Putra 1, Kajang",
+    "slug": "apartment-putra-1-kajang"
+  },
+  {
+    "name": "Apartment Taman Seri Murni Fasa 2, Batu Caves",
+    "slug": "apartment-taman-seri-murni-fasa-2-batu-caves"
+  },
+  {
+    "name": "Aradia Residence, Kepong",
+    "slug": "aradia-residence-kepong"
+  },
+  {
+    "name": "Arahsia Residences Telok Panglima Garang",
+    "slug": "arahsia-residences-telok-panglima-garang"
+  },
+  {
+    "name": "Aratre Residences, Petaling Jaya",
+    "slug": "aratre-residences-petaling-jaya"
+  },
+  {
+    "name": "Arena Residences Sepang",
+    "slug": "arena-residences-sepang"
+  },
+  {
+    "name": "Armani Residence Selangor",
+    "slug": "armani-residence-selangor"
+  },
+  {
+    "name": "Armani Soho, Subang Jaya",
+    "slug": "armani-soho-subang-jaya"
+  },
+  {
+    "name": "Arnica Serviced Residences, Petaling Jaya",
+    "slug": "arnica-serviced-residences-petaling-jaya"
+  },
+  {
+    "name": "Arte Plus, Ampang",
+    "slug": "arte-plus-ampang"
+  },
+  {
+    "name": "Arte S Bukit Gambier",
+    "slug": "arte-s-bukit-gambier"
+  },
+  {
+    "name": "Arte, Mont Kiara",
+    "slug": "arte-mont-kiara"
+  },
+  {
+    "name": "Aspire Residence, Cyberjaya",
+    "slug": "aspire-residence-cyberjaya"
+  },
+  {
+    "name": "Aster Diamond City, Semenyih",
+    "slug": "aster-diamond-city-semenyih"
+  },
+  {
+    "name": "Aster Residence, Cheras",
+    "slug": "aster-residence-cheras"
+  },
+  {
+    "name": "Astoria, Ampang",
+    "slug": "astoria-ampang"
+  },
+  {
+    "name": "Aurora Residence, Puchong",
+    "slug": "aurora-residence-puchong"
+  },
+  {
+    "name": "Avenue Crest, Shah Alam",
+    "slug": "avenue-crest-shah-alam"
+  },
+  {
+    "name": "Avilla Apartment, Puchong",
+    "slug": "avilla-apartment-puchong"
+  },
+  {
+    "name": "Aviva Green, Seremban",
+    "slug": "aviva-green-seremban"
+  },
+  {
+    "name": "B11 Parkland Residence, Cheras",
+    "slug": "b11-parkland-residence-cheras"
+  },
+  {
+    "name": "Bali Residence Apartment, Melaka",
+    "slug": "bali-residence-apartment-melaka"
+  },
+  {
+    "name": "Bandar Bukit Mahkota, Kajang",
+    "slug": "bandar-bukit-mahkota-kajang"
+  },
+  {
+    "name": "Bandar Bukit Puchong, Puchong",
+    "slug": "bandar-bukit-puchong-puchong"
+  },
+  {
+    "name": "Bandar Bukit Tinggi 2, Klang",
+    "slug": "bandar-bukit-tinggi-2-klang"
+  },
+  {
+    "name": "Bandar Cassia Batu Kawan",
+    "slug": "bandar-cassia-batu-kawan"
+  },
+  {
+    "name": "Bandar Kinrara 5, Puchong",
+    "slug": "bandar-kinrara-5-puchong"
+  },
+  {
+    "name": "Bandar Mahkota Banting Selangor",
+    "slug": "bandar-mahkota-banting-selangor"
+  },
+  {
+    "name": "Bandar Puncak Alam Kuala Selangor",
+    "slug": "bandar-puncak-alam-kuala-selangor"
+  },
+  {
+    "name": "Bandar Rimbayu Telok Panglima Garang",
+    "slug": "bandar-rimbayu-telok-panglima-garang"
+  },
+  {
+    "name": "Bandar Saujana Putra Jenjarom",
+    "slug": "bandar-saujana-putra-jenjarom"
+  },
+  {
+    "name": "Bandar Saujana Utama Sungai Buloh",
+    "slug": "bandar-saujana-utama-sungai-buloh"
+  },
+  {
+    "name": "Bandar Serenia Selangor",
+    "slug": "bandar-serenia-selangor"
+  },
+  {
+    "name": "Bandar Serenia Sepang",
+    "slug": "bandar-serenia-sepang"
+  },
+  {
+    "name": "Bandar Seri Coalfields Sungai Buloh",
+    "slug": "bandar-seri-coalfields-sungai-buloh"
+  },
+  {
+    "name": "Bandar Sri Sendayan, Seremban",
+    "slug": "bandar-sri-sendayan-seremban"
+  },
+  {
+    "name": "Bandar Sunway Semenyih, Semenyih",
+    "slug": "bandar-sunway-semenyih-semenyih"
+  },
+  {
+    "name": "Bandar Tasik Puteri, Rawang",
+    "slug": "bandar-tasik-puteri-rawang"
+  },
+  {
+    "name": "Bandar Utama",
+    "slug": "bandar-utama"
+  },
+  {
+    "name": "Bangsar Trade Centre, Kuala Lumpur",
+    "slug": "bangsar-trade-centre-kuala-lumpur"
+  },
+  {
+    "name": "Bangsar, Kuala Lumpur",
+    "slug": "bangsar"
+  },
+  {
+    "name": "Bayan Lepas",
+    "slug": "bayan-lepas"
+  },
+  {
+    "name": "Bayan Villa, Seri Kembangan",
+    "slug": "bayan-villa-seri-kembangan"
+  },
+  {
+    "name": "Bayou Lagoon Park Resort, Melaka",
+    "slug": "bayou-lagoon-park-resort-melaka"
+  },
+  {
+    "name": "Bayu Parkville Balakong",
+    "slug": "bayu-parkville-balakong"
+  },
+  {
+    "name": "Bayu Puteri Apartment, Petaling Jaya",
+    "slug": "bayu-puteri-apartment-petaling-jaya"
+  },
+  {
+    "name": "Bayu Sentul, Sentul",
+    "slug": "bayu-sentul-sentul"
+  },
+  {
+    "name": "Bayu Sutera, Seremban",
+    "slug": "bayu-sutera-seremban"
+  },
+  {
+    "name": "Bbk Condominium, Klang",
+    "slug": "bbk-condominium-klang"
+  },
+  {
+    "name": "Bennington Residences, Setapak",
+    "slug": "bennington-residences-setapak"
+  },
+  {
+    "name": "Bintang Mas Condominium, Kuala Lumpur",
+    "slug": "bintang-mas-condominium-kuala-lumpur"
+  },
+  {
+    "name": "Block A Semarak Taman Raintree, Batu Caves",
+    "slug": "block-a-semarak-taman-raintree-batu-caves"
+  },
+  {
+    "name": "Bloomsvale Residence Old Klang Road",
+    "slug": "bloomsvale-residence-old-klang-road"
+  },
+  {
+    "name": "Boulevard Service Apartment, Kuala Lumpur",
+    "slug": "boulevard-service-apartment-kuala-lumpur"
+  },
+  {
+    "name": "Brickfields, Kuala Lumpur",
+    "slug": "brickfields-kuala-lumpur"
+  },
+  {
+    "name": "Bsp21 Bandar Saujana Putra",
+    "slug": "bsp21-bandar-saujana-putra"
+  },
+  {
+    "name": "Bu 2, Petaling Jaya",
+    "slug": "bu-2-petaling-jaya"
+  },
+  {
+    "name": "Bukit Beruntung",
+    "slug": "bukit-beruntung"
+  },
+  {
+    "name": "Bukit Damansara, Damansara Heights",
+    "slug": "bukit-damansara-damansara-heights"
+  },
+  {
+    "name": "Bukit Jalil",
+    "slug": "bukit-jalil"
+  },
+  {
+    "name": "Bukit Mertajam",
+    "slug": "bukit-mertajam"
+  },
+  {
+    "name": "Bukit Pandan 1, Kuala Lumpur",
+    "slug": "bukit-pandan-1-kuala-lumpur"
+  },
+  {
+    "name": "Bungaraya Condominium, Shah Alam",
+    "slug": "bungaraya-condominium-shah-alam"
+  },
+  {
+    "name": "Cambridge Tower, Cyberjaya",
+    "slug": "cambridge-tower-cyberjaya"
+  },
+  {
+    "name": "Canopy Hills, Kajang",
+    "slug": "canopy-hills-kajang"
+  },
+  {
+    "name": "Cantara Residences, Petaling Jaya",
+    "slug": "cantara-residences-petaling-jaya"
+  },
+  {
+    "name": "Casa Bluebell, Dengkil",
+    "slug": "casa-bluebell-dengkil"
+  },
+  {
+    "name": "Casa Danau, Setapak",
+    "slug": "casa-danau-setapak"
+  },
+  {
+    "name": "Casa Green Bukit Jalil",
+    "slug": "casa-green-bukit-jalil"
+  },
+  {
+    "name": "Casa Idaman, Sentul",
+    "slug": "casa-idaman-sentul"
+  },
+  {
+    "name": "Casa Magna, Kepong",
+    "slug": "casa-magna-kepong"
+  },
+  {
+    "name": "Casa Puteri, Puchong",
+    "slug": "casa-puteri-puchong"
+  },
+  {
+    "name": "Casa Residences Chemor",
+    "slug": "casa-residences-chemor"
+  },
+  {
+    "name": "Casa Riana, Seri Kembangan",
+    "slug": "casa-riana-seri-kembangan"
+  },
+  {
+    "name": "Casa Tiara, Subang Jaya",
+    "slug": "casa-tiara-subang-jaya"
+  },
+  {
+    "name": "Casa Tropicana, Petaling Jaya",
+    "slug": "casa-tropicana-petaling-jaya"
+  },
+  {
+    "name": "Casa Tropika, Puchong",
+    "slug": "casa-tropika-puchong"
+  },
+  {
+    "name": "Cempaka Seri 1, Nilai",
+    "slug": "cempaka-seri-1-nilai"
+  },
+  {
+    "name": "Central I City, Shah Alam",
+    "slug": "central-i-city-shah-alam"
+  },
+  {
+    "name": "Centrus Soho, Cyberjaya",
+    "slug": "centrus-soho-cyberjaya"
+  },
+  {
+    "name": "Ceria Condominium, Cyberjaya",
+    "slug": "ceria-condominium-cyberjaya"
+  },
+  {
+    "name": "Cerrado Southville City, Dengkil",
+    "slug": "cerrado-southville-city-dengkil"
+  },
+  {
+    "name": "Chambers Residence, Kuala Lumpur",
+    "slug": "chambers-residence-kuala-lumpur"
+  },
+  {
+    "name": "Chambers, Kuala Lumpur",
+    "slug": "chambers-kuala-lumpur"
+  },
+  {
+    "name": "Champs Elysees Kampar",
+    "slug": "champs-elysees-kampar"
+  },
+  {
+    "name": "Chan Sow Lin, Kuala Lumpur",
+    "slug": "chan-sow-lin-kuala-lumpur"
+  },
+  {
+    "name": "Changkat View Dutamas",
+    "slug": "changkat-view-dutamas"
+  },
+  {
+    "name": "Cheras, Kuala Lumpur",
+    "slug": "cheras"
+  },
+  {
+    "name": "Cherry Hillpark, Puncak Alam",
+    "slug": "cherry-hillpark-puncak-alam"
+  },
+  {
+    "name": "Chymes Gurney Keramat",
+    "slug": "chymes-gurney-keramat"
+  },
+  {
+    "name": "Citizen 2, Kuala Lumpur",
+    "slug": "citizen-2-kuala-lumpur"
+  },
+  {
+    "name": "Citizen, Kuala Lumpur",
+    "slug": "citizen-kuala-lumpur"
+  },
+  {
+    "name": "City Of Green Condominium Bukit Jalil",
+    "slug": "city-of-green-condominium-bukit-jalil"
+  },
+  {
+    "name": "Cliveden, Sri Hartamas",
+    "slug": "cliveden-sri-hartamas"
+  },
+  {
+    "name": "Cloudtree Residence, Cheras",
+    "slug": "cloudtree-residence-cheras"
+  },
+  {
+    "name": "Condominium Akasia, Kuala Lumpur",
+    "slug": "condominium-akasia-kuala-lumpur"
+  },
+  {
+    "name": "Core Soho Suites Sepang",
+    "slug": "core-soho-suites-sepang"
+  },
+  {
+    "name": "Country Garden Danga Bay, Johor Bahru",
+    "slug": "country-garden-danga-bay-johor-bahru"
+  },
+  {
+    "name": "Court 28, Kuala Lumpur",
+    "slug": "court-28-kuala-lumpur"
+  },
+  {
+    "name": "Courtyard 3, Petaling Jaya",
+    "slug": "courtyard-3-petaling-jaya"
+  },
+  {
+    "name": "Cristal Serin Residence, Cyberjaya",
+    "slug": "cristal-serin-residence-cyberjaya"
+  },
+  {
+    "name": "Crown Tower Empire City, Petaling Jaya",
+    "slug": "crown-tower-empire-city-petaling-jaya"
+  },
+  {
+    "name": "Crystal Creek Taiping",
+    "slug": "crystal-creek-taiping"
+  },
+  {
+    "name": "Cubic Botanical Bangsar South",
+    "slug": "cubic-botanical-bangsar-south"
+  },
+  {
+    "name": "Cuepacs, Cheras",
+    "slug": "cuepacs-cheras"
+  },
+  {
+    "name": "Cyber City Apartment 1 Penampang",
+    "slug": "cyber-city-apartment-1-penampang"
+  },
+  {
+    "name": "Cyberia Crescent 2, Cyberjaya",
+    "slug": "cyberia-crescent-2-cyberjaya"
+  },
+  {
+    "name": "Cyberia Smarthomes, Cyberjaya",
+    "slug": "cyberia-smarthomes-cyberjaya"
+  },
+  {
+    "name": "Cyberjaya",
+    "slug": "cyberjaya"
+  },
+  {
+    "name": "Cybersquare, Cyberjaya",
+    "slug": "cybersquare-cyberjaya"
+  },
+  {
+    "name": "D Aman Crimson, Petaling Jaya",
+    "slug": "d-aman-crimson-petaling-jaya"
+  },
+  {
+    "name": "D Cahaya Apartment, Puchong",
+    "slug": "d-cahaya-apartment-puchong"
+  },
+  {
+    "name": "D Residence Block D",
+    "slug": "d-residence-block-d"
+  },
+  {
+    "name": "D Sara Sentral",
+    "slug": "d-sara-sentral"
+  },
+  {
+    "name": "D'sara Sentral",
+    "slug": "d'sara-sentral"
+  },
+  {
+    "name": "Dahlia Apartment, Setapak",
+    "slug": "dahlia-apartment-setapak"
+  },
+  {
+    "name": "Damai Residence Sungai Besi",
+    "slug": "damai-residence-sungai-besi"
+  },
+  {
+    "name": "Damai Vista Condominium, Cheras",
+    "slug": "damai-vista-condominium-cheras"
+  },
+  {
+    "name": "Daman Ria Condominium",
+    "slug": "daman-ria-condominium"
+  },
+  {
+    "name": "Damansara Utama, Petaling Jaya",
+    "slug": "damansara-utama-petaling-jaya"
+  },
+  {
+    "name": "Danau Impian Taman Desa",
+    "slug": "danau-impian-taman-desa"
+  },
+  {
+    "name": "Danau Ria, Rawang",
+    "slug": "danau-ria-rawang"
+  },
+  {
+    "name": "Datum Jelatek Keramat",
+    "slug": "datum-jelatek-keramat"
+  },
+  {
+    "name": "Dcassia, Semenyih",
+    "slug": "dcassia-semenyih"
+  },
+  {
+    "name": "Dcerrum Apartment, Semenyih",
+    "slug": "dcerrum-apartment-semenyih"
+  },
+  {
+    "name": "De Tropicana Kuchai Lama",
+    "slug": "de-tropicana-kuchai-lama"
+  },
+  {
+    "name": "Derica Residences, Petaling Jaya",
+    "slug": "derica-residences-petaling-jaya"
+  },
+  {
+    "name": "Desa Gembira Kuchai Lama",
+    "slug": "desa-gembira-kuchai-lama"
+  },
+  {
+    "name": "Desa Green Serviced Apartment, Kuala Lumpur",
+    "slug": "desa-green-serviced-apartment-kuala-lumpur"
+  },
+  {
+    "name": "Desa Idaman Residences, Puchong",
+    "slug": "desa-idaman-residences-puchong"
+  },
+  {
+    "name": "Desa Impiana, Puchong",
+    "slug": "desa-impiana-puchong"
+  },
+  {
+    "name": "Desa Indah Bayan Lepas",
+    "slug": "desa-indah-bayan-lepas"
+  },
+  {
+    "name": "Desa Saujana, Seri Kembangan",
+    "slug": "desa-saujana-seri-kembangan"
+  },
+  {
+    "name": "Desa Tasik Apartment Sungai Besi",
+    "slug": "desa-tasik-apartment-sungai-besi"
+  },
+  {
+    "name": "Dian Residency, Shah Alam",
+    "slug": "dian-residency-shah-alam"
+  },
+  {
+    "name": "Dk Impian, Shah Alam",
+    "slug": "dk-impian-shah-alam"
+  },
+  {
+    "name": "Dpulze Residence, Cyberjaya",
+    "slug": "dpulze-residence-cyberjaya"
+  },
+  {
+    "name": "Druby Residences, Puchong",
+    "slug": "druby-residences-puchong"
+  },
+  {
+    "name": "Dsands Residence Old Klang Road",
+    "slug": "dsands-residence-old-klang-road"
+  },
+  {
+    "name": "Dsara Sentral, Shah Alam",
+    "slug": "dsara-sentral-shah-alam"
+  },
+  {
+    "name": "Dseven Lagoon Perdana, Bandar Sunway",
+    "slug": "dseven-lagoon-perdana-bandar-sunway"
+  },
+  {
+    "name": "Dsuites Iskandar Puteri",
+    "slug": "dsuites-iskandar-puteri"
+  },
+  {
+    "name": "Dua Residensi Teluk Kumbar",
+    "slug": "dua-residensi-teluk-kumbar"
+  },
+  {
+    "name": "Dua Sentral Brickfields",
+    "slug": "dua-sentral-brickfields"
+  },
+  {
+    "name": "Dua Sentral Residential Tower, Kuala Lumpur",
+    "slug": "dua-sentral-residential-tower-kuala-lumpur"
+  },
+  {
+    "name": "Duta Park Residences, Kuala Lumpur",
+    "slug": "duta-park-residences-kuala-lumpur"
+  },
+  {
+    "name": "Duta Ria Dutamas",
+    "slug": "duta-ria-dutamas"
+  },
+  {
+    "name": "East Lake Residence, Seri Kembangan",
+    "slug": "east-lake-residence-seri-kembangan"
+  },
+  {
+    "name": "Eastwood Terrace, Petaling Jaya",
+    "slug": "eastwood-terrace-petaling-jaya"
+  },
+  {
+    "name": "Eclipse Residence, Cyberjaya",
+    "slug": "eclipse-residence-cyberjaya"
+  },
+  {
+    "name": "Eco Ardence, Shah Alam",
+    "slug": "eco-ardence-shah-alam"
+  },
+  {
+    "name": "Eco Forest, Semenyih",
+    "slug": "eco-forest-semenyih"
+  },
+  {
+    "name": "Eco Grandeur Avenham Bandar, Puncak Alam",
+    "slug": "eco-grandeur-avenham-bandar-puncak-alam"
+  },
+  {
+    "name": "Eco Grandeur Bandar, Puncak Alam",
+    "slug": "eco-grandeur-bandar-puncak-alam"
+  },
+  {
+    "name": "Eco Majestic, Semenyih",
+    "slug": "eco-majestic-semenyih"
+  },
+  {
+    "name": "Eco Sky, Kuala Lumpur",
+    "slug": "eco-sky-kuala-lumpur"
+  },
+  {
+    "name": "Edgewood Residences Skysanctuary, Kuala Lumpur",
+    "slug": "edgewood-residences-skysanctuary-kuala-lumpur"
+  },
+  {
+    "name": "Edusentral, Shah Alam",
+    "slug": "edusentral-shah-alam"
+  },
+  {
+    "name": "Edusphere Suites, Cyberjaya",
+    "slug": "edusphere-suites-cyberjaya"
+  },
+  {
+    "name": "Ehsan Residence Sepang",
+    "slug": "ehsan-residence-sepang"
+  },
+  {
+    "name": "Eisland Lake Haven Residence, Puchong",
+    "slug": "eisland-lake-haven-residence-puchong"
+  },
+  {
+    "name": "Eka Heights Bandar Sri Sendayan",
+    "slug": "eka-heights-bandar-sri-sendayan"
+  },
+  {
+    "name": "Elegan Residensi, Puchong",
+    "slug": "elegan-residensi-puchong"
+  },
+  {
+    "name": "Elmina East, Shah Alam",
+    "slug": "elmina-east-shah-alam"
+  },
+  {
+    "name": "Embayu Damansara West, Shah Alam",
+    "slug": "embayu-damansara-west-shah-alam"
+  },
+  {
+    "name": "Emerald Avenue, Batu Caves",
+    "slug": "emerald-avenue-batu-caves"
+  },
+  {
+    "name": "Emira, Shah Alam",
+    "slug": "emira-shah-alam"
+  },
+  {
+    "name": "Empire City Halo Sunday, Petaling Jaya",
+    "slug": "empire-city-halo-sunday-petaling-jaya"
+  },
+  {
+    "name": "Empire City, Petaling Jaya",
+    "slug": "empire-city-petaling-jaya"
+  },
+  {
+    "name": "Empire Damansara, Petaling Jaya",
+    "slug": "empire-damansara-petaling-jaya"
+  },
+  {
+    "name": "Emporis, Kota Damansara",
+    "slug": "emporis-kota-damansara"
+  },
+  {
+    "name": "Endah Promenade Sri Petaling",
+    "slug": "endah-promenade-sri-petaling"
+  },
+  {
+    "name": "Eve Suite",
+    "slug": "eve-suite"
+  },
+  {
+    "name": "Evo Soho Suite, Bangi",
+    "slug": "evo-soho-suite-bangi"
+  },
+  {
+    "name": "Fawina Court, Ampang",
+    "slug": "fawina-court-ampang"
+  },
+  {
+    "name": "Fera Residence Wangsa Maju",
+    "slug": "fera-residence-wangsa-maju"
+  },
+  {
+    "name": "Ferringhi Residence 2 Batu Ferringhi",
+    "slug": "ferringhi-residence-2-batu-ferringhi"
+  },
+  {
+    "name": "Fiera Vista Bayan Lepas",
+    "slug": "fiera-vista-bayan-lepas"
+  },
+  {
+    "name": "Flat Remia Bukit Mertajam",
+    "slug": "flat-remia-bukit-mertajam"
+  },
+  {
+    "name": "Flat Seksyen 2 Wangsa Maju",
+    "slug": "flat-seksyen-2-wangsa-maju"
+  },
+  {
+    "name": "Flat Taman Sri Murni Fasa 3, Kuala Lumpur",
+    "slug": "flat-taman-sri-murni-fasa-3-kuala-lumpur"
+  },
+  {
+    "name": "Flexis One South, Seri Kembangan",
+    "slug": "flexis-one-south-seri-kembangan"
+  },
+  {
+    "name": "Flora Damansara",
+    "slug": "flora-damansara"
+  },
+  {
+    "name": "Flora Damansara, Petaling Jaya",
+    "slug": "flora-damansara-petaling-jaya"
+  },
+  {
+    "name": "Flora Residency, Setapak",
+    "slug": "flora-residency-setapak"
+  },
+  {
+    "name": "Forest Green, Kajang",
+    "slug": "forest-green-kajang"
+  },
+  {
+    "name": "Forestville Bayan Lepas",
+    "slug": "forestville-bayan-lepas"
+  },
+  {
+    "name": "Fortune Park, Seri Kembangan",
+    "slug": "fortune-park-seri-kembangan"
+  },
+  {
+    "name": "Galaksi 3 Bandar Mahkota, Banting",
+    "slug": "galaksi-3-bandar-mahkota-banting"
+  },
+  {
+    "name": "Gambier Heights Bukit Gambier",
+    "slug": "gambier-heights-bukit-gambier"
+  },
+  {
+    "name": "Garden Homes, Bangi",
+    "slug": "garden-homes-bangi"
+  },
+  {
+    "name": "Garden Plaza, Cyberjaya",
+    "slug": "garden-plaza-cyberjaya"
+  },
+  {
+    "name": "Gardenville Townvilla Selayang",
+    "slug": "gardenville-townvilla-selayang"
+  },
+  {
+    "name": "Gaya Resort Homes, Shah Alam",
+    "slug": "gaya-resort-homes-shah-alam"
+  },
+  {
+    "name": "Gemilang Indah Old Klang Road",
+    "slug": "gemilang-indah-old-klang-road"
+  },
+  {
+    "name": "Genting View Resort Kempas Apartment Genting Highlands",
+    "slug": "genting-view-resort-kempas-apartment-genting-highlands"
+  },
+  {
+    "name": "Geo Bukit Rimau Condominium, Shah Alam",
+    "slug": "geo-bukit-rimau-condominium-shah-alam"
+  },
+  {
+    "name": "Glomac Damansara Ttdi",
+    "slug": "glomac-damansara-ttdi"
+  },
+  {
+    "name": "Gm Remia Residence, Klang",
+    "slug": "gm-remia-residence-klang"
+  },
+  {
+    "name": "Golden Sands Seaview Residence Suites, Johor Bahru",
+    "slug": "golden-sands-seaview-residence-suites-johor-bahru"
+  },
+  {
+    "name": "Grand Ion Delemen Hotel Genting Highlands",
+    "slug": "grand-ion-delemen-hotel-genting-highlands"
+  },
+  {
+    "name": "Gravit8, Klang",
+    "slug": "gravit8-klang"
+  },
+  {
+    "name": "Green Avenue Bukit Jalil",
+    "slug": "green-avenue-bukit-jalil"
+  },
+  {
+    "name": "Green Beverly Hills Putra, Nilai",
+    "slug": "green-beverly-hills-putra-nilai"
+  },
+  {
+    "name": "Green Park, Seri Kembangan",
+    "slug": "green-park-seri-kembangan"
+  },
+  {
+    "name": "Green Terrain, Cheras",
+    "slug": "green-terrain-cheras"
+  },
+  {
+    "name": "H2o Residences, Petaling Jaya",
+    "slug": "h2o-residences-petaling-jaya"
+  },
+  {
+    "name": "H4park Avenue, Seremban",
+    "slug": "h4park-avenue-seremban"
+  },
+  {
+    "name": "Habitus, Shah Alam",
+    "slug": "habitus-shah-alam"
+  },
+  {
+    "name": "Halya 2, Puncak Alam",
+    "slug": "halya-2-puncak-alam"
+  },
+  {
+    "name": "Harmoni 1, Subang Jaya",
+    "slug": "harmoni-1-subang-jaya"
+  },
+  {
+    "name": "Harmoni Eco Majestic, Semenyih",
+    "slug": "harmoni-eco-majestic-semenyih"
+  },
+  {
+    "name": "Havana Residences Bayan Lepas",
+    "slug": "havana-residences-bayan-lepas"
+  },
+  {
+    "name": "Henna Residences Wangsa Maju",
+    "slug": "henna-residences-wangsa-maju"
+  },
+  {
+    "name": "Highpark Suites, Petaling Jaya",
+    "slug": "highpark-suites-petaling-jaya"
+  },
+  {
+    "name": "Hillpark Residence, Semenyih",
+    "slug": "hillpark-residence-semenyih"
+  },
+  {
+    "name": "Horizon Residence 2, Johor Bahru",
+    "slug": "horizon-residence-2-johor-bahru"
+  },
+  {
+    "name": "Horizon Suites Sepang",
+    "slug": "horizon-suites-sepang"
+  },
+  {
+    "name": "Huni Residence Eco Ardence Setia Alam",
+    "slug": "huni-residence-eco-ardence-setia-alam"
+  },
+  {
+    "name": "I City, Shah Alam",
+    "slug": "i-city-shah-alam"
+  },
+  {
+    "name": "I Park Apartment Bayan Lepas",
+    "slug": "i-park-apartment-bayan-lepas"
+  },
+  {
+    "name": "I Residence, Kota Damansara",
+    "slug": "i-residence-kota-damansara"
+  },
+  {
+    "name": "I Residence, Petaling Jaya",
+    "slug": "i-residence-petaling-jaya"
+  },
+  {
+    "name": "I Santorini Tanjung Tokong",
+    "slug": "i-santorini-tanjung-tokong"
+  },
+  {
+    "name": "I Soho I City",
+    "slug": "i-soho-i-city"
+  },
+  {
+    "name": "I Suite, Shah Alam",
+    "slug": "i-suite-shah-alam"
+  },
+  {
+    "name": "Icon City, Petaling Jaya",
+    "slug": "icon-city-petaling-jaya"
+  },
+  {
+    "name": "Idaman Apartment, Petaling Jaya",
+    "slug": "idaman-apartment-petaling-jaya"
+  },
+  {
+    "name": "Idaman Iris Bayan Lepas",
+    "slug": "idaman-iris-bayan-lepas"
+  },
+  {
+    "name": "Ideal Residency Gelugor",
+    "slug": "ideal-residency-gelugor"
+  },
+  {
+    "name": "Illaria Gamuda Gardens, Rawang",
+    "slug": "illaria-gamuda-gardens-rawang"
+  },
+  {
+    "name": "Imperial Residence, Cheras",
+    "slug": "imperial-residence-cheras"
+  },
+  {
+    "name": "Intana Ria 1, Bangi",
+    "slug": "intana-ria-1-bangi"
+  },
+  {
+    "name": "Iris Apartment Taman Desa",
+    "slug": "iris-apartment-taman-desa"
+  },
+  {
+    "name": "Iris Residence, Kajang",
+    "slug": "iris-residence-kajang"
+  },
+  {
+    "name": "Ivory Residence, Kajang",
+    "slug": "ivory-residence-kajang"
+  },
+  {
+    "name": "Jalan Jeriji Bukit Jelutong",
+    "slug": "jalan-jeriji-bukit-jelutong"
+  },
+  {
+    "name": "Jalan Kemboja, Banting",
+    "slug": "jalan-kemboja-banting"
+  },
+  {
+    "name": "Jalan Limau Manis, Kuala Lumpur",
+    "slug": "jalan-limau-manis-kuala-lumpur"
+  },
+  {
+    "name": "Jalan Meru, Klang",
+    "slug": "jalan-meru-klang"
+  },
+  {
+    "name": "Jalan Pantai, Port Dickson",
+    "slug": "jalan-pantai-port-dickson"
+  },
+  {
+    "name": "Jalan Putra Perdana, Puchong",
+    "slug": "jalan-putra-perdana-puchong"
+  },
+  {
+    "name": "Jalan Tasik Prima, Puchong",
+    "slug": "jalan-tasik-prima-puchong"
+  },
+  {
+    "name": "Jalan Usahawan, Setapak",
+    "slug": "jalan-usahawan-setapak"
+  },
+  {
+    "name": "Jalil Damai Bukit Jalil",
+    "slug": "jalil-damai-bukit-jalil"
+  },
+  {
+    "name": "Jalil Sutera Bukit Jalil",
+    "slug": "jalil-sutera-bukit-jalil"
+  },
+  {
+    "name": "Johor Bahru",
+    "slug": "johor-bahru"
+  },
+  {
+    "name": "Joya Gamuda Gardens, Rawang",
+    "slug": "joya-gamuda-gardens-rawang"
+  },
+  {
+    "name": "K Boulevard, Puchong",
+    "slug": "k-boulevard-puchong"
+  },
+  {
+    "name": "Kajang 2, Kajang",
+    "slug": "kajang-2-kajang"
+  },
+  {
+    "name": "Kampung Baru Ampang, Ampang",
+    "slug": "kampung-baru-ampang-ampang"
+  },
+  {
+    "name": "Kampung Dato Abu Bakar Baginda, Kajang",
+    "slug": "kampung-dato-abu-bakar-baginda-kajang"
+  },
+  {
+    "name": "Kampung Kuala Lukut, Port Dickson",
+    "slug": "kampung-kuala-lukut-port-dickson"
+  },
+  {
+    "name": "Kampung Melayu Kepong, Kuala Lumpur",
+    "slug": "kampung-melayu-kepong-kuala-lumpur"
+  },
+  {
+    "name": "Kampung Sri Aman, Puchong",
+    "slug": "kampung-sri-aman-puchong"
+  },
+  {
+    "name": "Kamunting",
+    "slug": "kamunting"
+  },
+  {
+    "name": "Kasturi Idaman Condominium, Petaling Jaya",
+    "slug": "kasturi-idaman-condominium-petaling-jaya"
+  },
+  {
+    "name": "Kawasan Perindustrian Nilai 3, Nilai",
+    "slug": "kawasan-perindustrian-nilai-3-nilai"
+  },
+  {
+    "name": "Kelana Jaya",
+    "slug": "kelana-jaya"
+  },
+  {
+    "name": "Kelana Jaya LRT",
+    "slug": "kelana-jaya-lrt"
+  },
+  {
+    "name": "Ken Rimba, Shah Alam",
+    "slug": "ken-rimba-shah-alam"
+  },
+  {
+    "name": "Kenwingston Avenue Sungai Besi",
+    "slug": "kenwingston-avenue-sungai-besi"
+  },
+  {
+    "name": "Kenwingston Platz Residence, Setapak",
+    "slug": "kenwingston-platz-residence-setapak"
+  },
+  {
+    "name": "Kenwingston Square Garden, Cyberjaya",
+    "slug": "kenwingston-square-garden-cyberjaya"
+  },
+  {
+    "name": "Kepong",
+    "slug": "kepong"
+  },
+  {
+    "name": "Kiambang Apartment, Puchong",
+    "slug": "kiambang-apartment-puchong"
+  },
+  {
+    "name": "Kiara Kasih Condominium",
+    "slug": "kiara-kasih-condominium"
+  },
+  {
+    "name": "Kiara Kasih Condominium, Mont Kiara",
+    "slug": "kiara-kasih-condominium-mont-kiara"
+  },
+  {
+    "name": "Kiara Plaza, Semenyih",
+    "slug": "kiara-plaza-semenyih"
+  },
+  {
+    "name": "Kinrara Mas Bukit Jalil",
+    "slug": "kinrara-mas-bukit-jalil"
+  },
+  {
+    "name": "Kita Bayu, Dengkil",
+    "slug": "kita-bayu-dengkil"
+  },
+  {
+    "name": "Kita Harmoni, Dengkil",
+    "slug": "kita-harmoni-dengkil"
+  },
+  {
+    "name": "Kita Ria, Dengkil",
+    "slug": "kita-ria-dengkil"
+  },
+  {
+    "name": "Kl Ridge Serviced Apartment",
+    "slug": "kl-ridge-serviced-apartment"
+  },
+  {
+    "name": "Kl Traders Square, Gombak",
+    "slug": "kl-traders-square-gombak"
+  },
+  {
+    "name": "Klang",
+    "slug": "klang"
+  },
+  {
+    "name": "Klcc",
+    "slug": "klcc"
+  },
+  {
+    "name": "Koi Kinrara, Puchong",
+    "slug": "koi-kinrara-puchong"
+  },
+  {
+    "name": "Koi Prima, Puchong",
+    "slug": "koi-prima-puchong"
+  },
+  {
+    "name": "Kota Damansara",
+    "slug": "kota-damansara"
+  },
+  {
+    "name": "Kota Kemuning",
+    "slug": "kota-kemuning"
+  },
+  {
+    "name": "Kristal View, Shah Alam",
+    "slug": "kristal-view-shah-alam"
+  },
+  {
+    "name": "Kuala Lumpur, Malaysia",
+    "slug": "kuala-lumpur"
+  },
+  {
+    "name": "Lagoon Perdana Apartment, Petaling Jaya",
+    "slug": "lagoon-perdana-apartment-petaling-jaya"
+  },
+  {
+    "name": "Lake Point Residence, Cyberjaya",
+    "slug": "lake-point-residence-cyberjaya"
+  },
+  {
+    "name": "Lakefront Homes, Cyberjaya",
+    "slug": "lakefront-homes-cyberjaya"
+  },
+  {
+    "name": "Lakefront Residence, Cyberjaya",
+    "slug": "lakefront-residence-cyberjaya"
+  },
+  {
+    "name": "Lakes Condominiums, Shah Alam",
+    "slug": "lakes-condominiums-shah-alam"
+  },
+  {
+    "name": "Lakeside Tower Penang",
+    "slug": "lakeside-tower-penang"
+  },
+  {
+    "name": "Lakeville Residence, Batu Caves",
+    "slug": "lakeville-residence-batu-caves"
+  },
+  {
+    "name": "Laman Impian, Klang",
+    "slug": "laman-impian-klang"
+  },
+  {
+    "name": "Laman Sendayan, Seremban",
+    "slug": "laman-sendayan-seremban"
+  },
+  {
+    "name": "Larkin Heights, Johor Bahru",
+    "slug": "larkin-heights-johor-bahru"
+  },
+  {
+    "name": "Lavender Residences, Kajang",
+    "slug": "lavender-residences-kajang"
+  },
+  {
+    "name": "Lbs Skylake Residence",
+    "slug": "lbs-skylake-residence"
+  },
+  {
+    "name": "Le Chateau Seputeh, Kuala Lumpur",
+    "slug": "le-chateau-seputeh-kuala-lumpur"
+  },
+  {
+    "name": "Le Yuan Residence Kuchai Lama",
+    "slug": "le-yuan-residence-kuchai-lama"
+  },
+  {
+    "name": "Leader Garden Tanjung Bungah",
+    "slug": "leader-garden-tanjung-bungah"
+  },
+  {
+    "name": "Legasi Kampong Bharu, Kuala Lumpur",
+    "slug": "legasi-kampong-bharu-kuala-lumpur"
+  },
+  {
+    "name": "Legendview Condominium, Rawang",
+    "slug": "legendview-condominium-rawang"
+  },
+  {
+    "name": "Lengkongan Sembilang, Klang",
+    "slug": "lengkongan-sembilang-klang"
+  },
+  {
+    "name": "Lestari Perdana, Seri Kembangan",
+    "slug": "lestari-perdana-seri-kembangan"
+  },
+  {
+    "name": "Lexis Water Chalet, Port Dickson",
+    "slug": "lexis-water-chalet-port-dickson"
+  },
+  {
+    "name": "Liberty Arc",
+    "slug": "liberty-arc"
+  },
+  {
+    "name": "Liberty Arc, Ampang",
+    "slug": "liberty-arc-ampang"
+  },
+  {
+    "name": "Lily Jasmine Apartment, Johor Bahru",
+    "slug": "lily-jasmine-apartment-johor-bahru"
+  },
+  {
+    "name": "Lumi Tropicana, Petaling Jaya",
+    "slug": "lumi-tropicana-petaling-jaya"
+  },
+  {
+    "name": "M Arisa Sentul, Kuala Lumpur",
+    "slug": "m-arisa-sentul-kuala-lumpur"
+  },
+  {
+    "name": "M Centura, Sentul",
+    "slug": "m-centura-sentul"
+  },
+  {
+    "name": "M City, Kuala Lumpur",
+    "slug": "m-city-kuala-lumpur"
+  },
+  {
+    "name": "M Suites Ampang Hilir",
+    "slug": "m-suites-ampang-hilir"
+  },
+  {
+    "name": "M Vertica, Kuala Lumpur",
+    "slug": "m-vertica-kuala-lumpur"
+  },
+  {
+    "name": "Magna Ville, Batu Caves",
+    "slug": "magna-ville-batu-caves"
+  },
+  {
+    "name": "Mahkota Valley Suites Kuantan",
+    "slug": "mahkota-valley-suites-kuantan"
+  },
+  {
+    "name": "Main Place Residence, Subang Jaya",
+    "slug": "main-place-residence-subang-jaya"
+  },
+  {
+    "name": "Maisson Residence, Petaling Jaya",
+    "slug": "maisson-residence-petaling-jaya"
+  },
+  {
+    "name": "Marc Residence, Kuala Lumpur",
+    "slug": "marc-residence-kuala-lumpur"
+  },
+  {
+    "name": "Marina Terrace, Port Dickson",
+    "slug": "marina-terrace-port-dickson"
+  },
+  {
+    "name": "Masreca 19, Cyberjaya",
+    "slug": "masreca-19-cyberjaya"
+  },
+  {
+    "name": "Mawar Apartment Genting Highlands",
+    "slug": "mawar-apartment-genting-highlands"
+  },
+  {
+    "name": "Maxim Citilights, Sentul",
+    "slug": "maxim-citilights-sentul"
+  },
+  {
+    "name": "Maxwell Towers, Petaling Jaya",
+    "slug": "maxwell-towers-petaling-jaya"
+  },
+  {
+    "name": "Maya Ara Residences, Petaling Jaya",
+    "slug": "maya-ara-residences-petaling-jaya"
+  },
+  {
+    "name": "Maya Bay Residences, Banting",
+    "slug": "maya-bay-residences-banting"
+  },
+  {
+    "name": "Mekary Iringan Bayu, Seremban",
+    "slug": "mekary-iringan-bayu-seremban"
+  },
+  {
+    "name": "Mellowood Eco Majestic, Semenyih",
+    "slug": "mellowood-eco-majestic-semenyih"
+  },
+  {
+    "name": "Menara Klh, Sentul",
+    "slug": "menara-klh-sentul"
+  },
+  {
+    "name": "Menara Megah, Kuala Lumpur",
+    "slug": "menara-megah-kuala-lumpur"
+  },
+  {
+    "name": "Menara Menjalara Bandar Menjalara",
+    "slug": "menara-menjalara-bandar-menjalara"
+  },
+  {
+    "name": "Menara Orkid, Sentul",
+    "slug": "menara-orkid-sentul"
+  },
+  {
+    "name": "Menara Suria, Subang Jaya",
+    "slug": "menara-suria-subang-jaya"
+  },
+  {
+    "name": "Menara U",
+    "slug": "menara-u"
+  },
+  {
+    "name": "Mentari Court, Petaling Jaya",
+    "slug": "mentari-court-petaling-jaya"
+  },
+  {
+    "name": "Meranti Hillpark Sungai Buloh",
+    "slug": "meranti-hillpark-sungai-buloh"
+  },
+  {
+    "name": "Mercu Jalil Bukit Jalil",
+    "slug": "mercu-jalil-bukit-jalil"
+  },
+  {
+    "name": "Mercu Summer Suites, Kuala Lumpur",
+    "slug": "mercu-summer-suites-kuala-lumpur"
+  },
+  {
+    "name": "Mercure Kota Kinabalu",
+    "slug": "mercure-kota-kinabalu"
+  },
+  {
+    "name": "Mercury Serviced Apartment, Sentul",
+    "slug": "mercury-serviced-apartment-sentul"
+  },
+  {
+    "name": "Merdaka View Apartment, Kuala Lumpur",
+    "slug": "merdaka-view-apartment-kuala-lumpur"
+  },
+  {
+    "name": "Meridin Bayvue Masai",
+    "slug": "meridin-bayvue-masai"
+  },
+  {
+    "name": "Mesahill, Nilai",
+    "slug": "mesahill-nilai"
+  },
+  {
+    "name": "Met 1 Residences, Kuala Lumpur",
+    "slug": "met-1-residences-kuala-lumpur"
+  },
+  {
+    "name": "Meta Residences, Seri Kembangan",
+    "slug": "meta-residences-seri-kembangan"
+  },
+  {
+    "name": "Metropolitan Square, Petaling Jaya",
+    "slug": "metropolitan-square-petaling-jaya"
+  },
+  {
+    "name": "Mh Platinum 2 Residences, Setapak",
+    "slug": "mh-platinum-2-residences-setapak"
+  },
+  {
+    "name": "Midlands City Taman Tasik, Semenyih",
+    "slug": "midlands-city-taman-tasik-semenyih"
+  },
+  {
+    "name": "Millerz Square Old Klang Road",
+    "slug": "millerz-square-old-klang-road"
+  },
+  {
+    "name": "Mira At Shorea Park, Puchong",
+    "slug": "mira-at-shorea-park-puchong"
+  },
+  {
+    "name": "Mirage By The Lake, Cyberjaya",
+    "slug": "mirage-by-the-lake-cyberjaya"
+  },
+  {
+    "name": "Mirai Residences, Kajang",
+    "slug": "mirai-residences-kajang"
+  },
+  {
+    "name": "Molek Regency, Johor Bahru",
+    "slug": "molek-regency-johor-bahru"
+  },
+  {
+    "name": "Mont Kiara",
+    "slug": "mont-kiara"
+  },
+  {
+    "name": "Mori Residences, Rawang",
+    "slug": "mori-residences-rawang"
+  },
+  {
+    "name": "Mossaz By Exsim, Petaling Jaya",
+    "slug": "mossaz-by-exsim-petaling-jaya"
+  },
+  {
+    "name": "Mutiara Hills, Semenyih",
+    "slug": "mutiara-hills-semenyih"
+  },
+  {
+    "name": "Mutiara Perdana, Subang Jaya",
+    "slug": "mutiara-perdana-subang-jaya"
+  },
+  {
+    "name": "Mutiara Residences, Seri Kembangan",
+    "slug": "mutiara-residences-seri-kembangan"
+  },
+  {
+    "name": "Mutiara Ville Residence, Cyberjaya",
+    "slug": "mutiara-ville-residence-cyberjaya"
+  },
+  {
+    "name": "Myhabitat, Kuala Lumpur",
+    "slug": "myhabitat-kuala-lumpur"
+  },
+  {
+    "name": "Myra Alam, Puncak Alam",
+    "slug": "myra-alam-puncak-alam"
+  },
+  {
+    "name": "Nadayu 801, Shah Alam",
+    "slug": "nadayu-801-shah-alam"
+  },
+  {
+    "name": "Nadayu63 Melawati",
+    "slug": "nadayu63-melawati"
+  },
+  {
+    "name": "Neo Damansara Damansara Perdana",
+    "slug": "neo-damansara-damansara-perdana"
+  },
+  {
+    "name": "Neu Suites, Kuala Lumpur",
+    "slug": "neu-suites-kuala-lumpur"
+  },
+  {
+    "name": "Nexus, Kajang",
+    "slug": "nexus-kajang"
+  },
+  {
+    "name": "Nidoz Residences Desa Petaling",
+    "slug": "nidoz-residences-desa-petaling"
+  },
+  {
+    "name": "Nilai",
+    "slug": "nilai"
+  },
+  {
+    "name": "Nilam Puri, Puchong",
+    "slug": "nilam-puri-puchong"
+  },
+  {
+    "name": "Nova Saujana, Shah Alam",
+    "slug": "nova-saujana-shah-alam"
+  },
+  {
+    "name": "Nue Suites, Kuala Lumpur",
+    "slug": "nue-suites-kuala-lumpur"
+  },
+  {
+    "name": "O2 Residence, Seri Kembangan",
+    "slug": "o2-residence-seri-kembangan"
+  },
+  {
+    "name": "Oasis 2, Kajang",
+    "slug": "oasis-2-kajang"
+  },
+  {
+    "name": "Oasis Damansara, Petaling Jaya",
+    "slug": "oasis-damansara-petaling-jaya"
+  },
+  {
+    "name": "Ohako, Puchong",
+    "slug": "ohako-puchong"
+  },
+  {
+    "name": "Old Klang Road",
+    "slug": "old-klang-road"
+  },
+  {
+    "name": "One Cochrane Residences, Kuala Lumpur",
+    "slug": "one-cochrane-residences-kuala-lumpur"
+  },
+  {
+    "name": "One Damansara, Petaling Jaya",
+    "slug": "one-damansara-petaling-jaya"
+  },
+  {
+    "name": "One Foresta Bayan Lepas",
+    "slug": "one-foresta-bayan-lepas"
+  },
+  {
+    "name": "One Maxim, Sentul",
+    "slug": "one-maxim-sentul"
+  },
+  {
+    "name": "One Residence Kuala Luimpur",
+    "slug": "one-residence-kuala-luimpur"
+  },
+  {
+    "name": "One South, Seri Kembangan",
+    "slug": "one-south-seri-kembangan"
+  },
+  {
+    "name": "Opal Apartment, Kuala Lumpur",
+    "slug": "opal-apartment-kuala-lumpur"
+  },
+  {
+    "name": "Oug Parklane Old Klang Road",
+    "slug": "oug-parklane-old-klang-road"
+  },
+  {
+    "name": "Pacific 63",
+    "slug": "pacific-63"
+  },
+  {
+    "name": "Pacific Place, Petaling Jaya",
+    "slug": "pacific-place-petaling-jaya"
+  },
+  {
+    "name": "Pacific Star",
+    "slug": "pacific-star"
+  },
+  {
+    "name": "Pacific Star Tower, Petaling Jaya",
+    "slug": "pacific-star-tower-petaling-jaya"
+  },
+  {
+    "name": "Palazio Mount Austin, Johor Bahru",
+    "slug": "palazio-mount-austin-johor-bahru"
+  },
+  {
+    "name": "Palm Garden Apartment, Klang",
+    "slug": "palm-garden-apartment-klang"
+  },
+  {
+    "name": "Palm Hill Residence, Kajang",
+    "slug": "palm-hill-residence-kajang"
+  },
+  {
+    "name": "Palm Spring, Petaling Jaya",
+    "slug": "palm-spring-petaling-jaya"
+  },
+  {
+    "name": "Palma Sands Bandar Gamuda Cove",
+    "slug": "palma-sands-bandar-gamuda-cove"
+  },
+  {
+    "name": "Palmyra Residences, Bangi",
+    "slug": "palmyra-residences-bangi"
+  },
+  {
+    "name": "Palmyra Residences, Kajang",
+    "slug": "palmyra-residences-kajang"
+  },
+  {
+    "name": "Pandan Heights Condominium, Ampang",
+    "slug": "pandan-heights-condominium-ampang"
+  },
+  {
+    "name": "Pangsapuri Angsa Segambut",
+    "slug": "pangsapuri-angsa-segambut"
+  },
+  {
+    "name": "Pangsapuri Bachang Baru, Melaka",
+    "slug": "pangsapuri-bachang-baru-melaka"
+  },
+  {
+    "name": "Pangsapuri Bukit Kuda, Klang",
+    "slug": "pangsapuri-bukit-kuda-klang"
+  },
+  {
+    "name": "Pangsapuri Cemara, Cheras",
+    "slug": "pangsapuri-cemara-cheras"
+  },
+  {
+    "name": "Pangsapuri Danau Pandan 1, Kuala Lumpur",
+    "slug": "pangsapuri-danau-pandan-1-kuala-lumpur"
+  },
+  {
+    "name": "Pangsapuri Enggang, Puchong",
+    "slug": "pangsapuri-enggang-puchong"
+  },
+  {
+    "name": "Pangsapuri Goodview Heights 2, Kajang",
+    "slug": "pangsapuri-goodview-heights-2-kajang"
+  },
+  {
+    "name": "Pangsapuri Indahria, Shah Alam",
+    "slug": "pangsapuri-indahria-shah-alam"
+  },
+  {
+    "name": "Pangsapuri Mawar Jaya, Kajang",
+    "slug": "pangsapuri-mawar-jaya-kajang"
+  },
+  {
+    "name": "Pangsapuri Mutiara Subang, Shah Alam",
+    "slug": "pangsapuri-mutiara-subang-shah-alam"
+  },
+  {
+    "name": "Pangsapuri Perdana Villa, Klang",
+    "slug": "pangsapuri-perdana-villa-klang"
+  },
+  {
+    "name": "Pangsapuri Pulau, Melaka",
+    "slug": "pangsapuri-pulau-melaka"
+  },
+  {
+    "name": "Pangsapuri Savana Bandar Cassia",
+    "slug": "pangsapuri-savana-bandar-cassia"
+  },
+  {
+    "name": "Pangsapuri Sri Indah, Cyberjaya",
+    "slug": "pangsapuri-sri-indah-cyberjaya"
+  },
+  {
+    "name": "Pangsapuri Sri Mutiara, Subang Jaya",
+    "slug": "pangsapuri-sri-mutiara-subang-jaya"
+  },
+  {
+    "name": "Pangsapuri Taman Tasik Utama Ayer Keroh",
+    "slug": "pangsapuri-taman-tasik-utama-ayer-keroh"
+  },
+  {
+    "name": "Pantai Panorama, Kuala Lumpur",
+    "slug": "pantai-panorama-kuala-lumpur"
+  },
+  {
+    "name": "Paragon 3, Seri Kembangan",
+    "slug": "paragon-3-seri-kembangan"
+  },
+  {
+    "name": "Paragon, Cyberjaya",
+    "slug": "paragon-cyberjaya"
+  },
+  {
+    "name": "Parc 3, Cheras",
+    "slug": "parc-3-cheras"
+  },
+  {
+    "name": "Park 51 Residency, Petaling Jaya",
+    "slug": "park-51-residency-petaling-jaya"
+  },
+  {
+    "name": "Parkland Residence Kajang 2",
+    "slug": "parkland-residence-kajang-2"
+  },
+  {
+    "name": "Parkview Service Apartment, Kuala Lumpur",
+    "slug": "parkview-service-apartment-kuala-lumpur"
+  },
+  {
+    "name": "Paxtonz Empire City Damansara Perdana",
+    "slug": "paxtonz-empire-city-damansara-perdana"
+  },
+  {
+    "name": "Pearl Suria Old Klang Road",
+    "slug": "pearl-suria-old-klang-road"
+  },
+  {
+    "name": "Pekan Sehari Beranang Beranang",
+    "slug": "pekan-sehari-beranang-beranang"
+  },
+  {
+    "name": "Pelangi Astana, Petaling Jaya",
+    "slug": "pelangi-astana-petaling-jaya"
+  },
+  {
+    "name": "Pelangi Court, Klang",
+    "slug": "pelangi-court-klang"
+  },
+  {
+    "name": "Penaga Taman Raintree, Batu Caves",
+    "slug": "penaga-taman-raintree-batu-caves"
+  },
+  {
+    "name": "Penang",
+    "slug": "penang"
+  },
+  {
+    "name": "Peony Square Residences Cameron Highlands",
+    "slug": "peony-square-residences-cameron-highlands"
+  },
+  {
+    "name": "Perdana Exclusive, Petaling Jaya",
+    "slug": "perdana-exclusive-petaling-jaya"
+  },
+  {
+    "name": "Perdana Puri, Kepong",
+    "slug": "perdana-puri-kepong"
+  },
+  {
+    "name": "Perla Ara Sentral",
+    "slug": "perla-ara-sentral"
+  },
+  {
+    "name": "Perla Ara Sentral, Petaling Jaya",
+    "slug": "perla-ara-sentral-petaling-jaya"
+  },
+  {
+    "name": "Permai Lake View Apartment Ipoh",
+    "slug": "permai-lake-view-apartment-ipoh"
+  },
+  {
+    "name": "Permata Residence, Kajang",
+    "slug": "permata-residence-kajang"
+  },
+  {
+    "name": "Persanda 3 Apartment, Shah Alam",
+    "slug": "persanda-3-apartment-shah-alam"
+  },
+  {
+    "name": "Pertiwi Indah, Cheras",
+    "slug": "pertiwi-indah-cheras"
+  },
+  {
+    "name": "Perumahan Makmur Gambang Gambang",
+    "slug": "perumahan-makmur-gambang-gambang"
+  },
+  {
+    "name": "Pesona Villa, Kuala Lumpur",
+    "slug": "pesona-villa-kuala-lumpur"
+  },
+  {
+    "name": "Petaling Indah Condominium, Kuala Lumpur",
+    "slug": "petaling-indah-condominium-kuala-lumpur"
+  },
+  {
+    "name": "Petaling Jaya",
+    "slug": "petaling-jaya"
+  },
+  {
+    "name": "Petalz Residences Old Klang Road",
+    "slug": "petalz-residences-old-klang-road"
+  },
+  {
+    "name": "Pinnacle Tower Apartment Johor Baru",
+    "slug": "pinnacle-tower-apartment-johor-baru"
+  },
+  {
+    "name": "Pj Midtown, Petaling Jaya",
+    "slug": "pj-midtown-petaling-jaya"
+  },
+  {
+    "name": "Pj8 Serviced Residences, Petaling Jaya",
+    "slug": "pj8-serviced-residences-petaling-jaya"
+  },
+  {
+    "name": "Pjs 7, Petaling Jaya",
+    "slug": "pjs-7-petaling-jaya"
+  },
+  {
+    "name": "Platinum Lake Pv21, Kuala Lumpur",
+    "slug": "platinum-lake-pv21-kuala-lumpur"
+  },
+  {
+    "name": "Platinum Oug Residence, Kuala Lumpur",
+    "slug": "platinum-oug-residence-kuala-lumpur"
+  },
+  {
+    "name": "Platinum Splendor Residence, Kuala Lumpur",
+    "slug": "platinum-splendor-residence-kuala-lumpur"
+  },
+  {
+    "name": "Plaza Indah Apartment, Kajang",
+    "slug": "plaza-indah-apartment-kajang"
+  },
+  {
+    "name": "Plaza Rah, Kuala Lumpur",
+    "slug": "plaza-rah-kuala-lumpur"
+  },
+  {
+    "name": "Ppa1m Bukit Jalil Bukit Jalil",
+    "slug": "ppa1m-bukit-jalil-bukit-jalil"
+  },
+  {
+    "name": "Ppa1m Metropolitan Kepong, Kuala Lumpur",
+    "slug": "ppa1m-metropolitan-kepong-kuala-lumpur"
+  },
+  {
+    "name": "Ppam Metropolitan Kepong, Kuala Lumpur",
+    "slug": "ppam-metropolitan-kepong-kuala-lumpur"
+  },
+  {
+    "name": "Ppr Lembah Subang 2, Petaling Jaya",
+    "slug": "ppr-lembah-subang-2-petaling-jaya"
+  },
+  {
+    "name": "Pr1ma Two, Cyberjaya",
+    "slug": "pr1ma-two-cyberjaya"
+  },
+  {
+    "name": "Precinct 14, Putrajaya",
+    "slug": "precinct-14-putrajaya"
+  },
+  {
+    "name": "Prima Bayu, Klang",
+    "slug": "prima-bayu-klang"
+  },
+  {
+    "name": "Prime Villa, Kuala Lumpur",
+    "slug": "prime-villa-kuala-lumpur"
+  },
+  {
+    "name": "Princeton Edusentral, Shah Alam",
+    "slug": "princeton-edusentral-shah-alam"
+  },
+  {
+    "name": "Prisma Cheras, Kuala Lumpur",
+    "slug": "prisma-cheras-kuala-lumpur"
+  },
+  {
+    "name": "Puchong",
+    "slug": "puchong"
+  },
+  {
+    "name": "Puncak Damansara Condominium, Petaling Jaya",
+    "slug": "puncak-damansara-condominium-petaling-jaya"
+  },
+  {
+    "name": "Puncak Hijauan Condominium, Kajang",
+    "slug": "puncak-hijauan-condominium-kajang"
+  },
+  {
+    "name": "Puncak Rasah Apartment, Seremban",
+    "slug": "puncak-rasah-apartment-seremban"
+  },
+  {
+    "name": "Puri Aiyu, Shah Alam",
+    "slug": "puri-aiyu-shah-alam"
+  },
+  {
+    "name": "Pusat Hentian Kajang, Kajang",
+    "slug": "pusat-hentian-kajang-kajang"
+  },
+  {
+    "name": "Puteri 12, Puchong",
+    "slug": "puteri-12-puchong"
+  },
+  {
+    "name": "Putra Permai, Seri Kembangan",
+    "slug": "putra-permai-seri-kembangan"
+  },
+  {
+    "name": "Putra Residence, Subang Jaya",
+    "slug": "putra-residence-subang-jaya"
+  },
+  {
+    "name": "Putra Villa, Kuala Lumpur",
+    "slug": "putra-villa-kuala-lumpur"
+  },
+  {
+    "name": "Putrajaya, Wilayah Persekutuan",
+    "slug": "putrajaya"
+  },
+  {
+    "name": "Pv21 Setapak, Kuala Lumpur",
+    "slug": "pv21-setapak-kuala-lumpur"
+  },
+  {
+    "name": "Quaywest Residence Bayan Lepas",
+    "slug": "quaywest-residence-bayan-lepas"
+  },
+  {
+    "name": "Quinn Residence Wangsa Maju",
+    "slug": "quinn-residence-wangsa-maju"
+  },
+  {
+    "name": "Radius Residence, Batu Caves",
+    "slug": "radius-residence-batu-caves"
+  },
+  {
+    "name": "Rafflesia Condo, Sentul",
+    "slug": "rafflesia-condo-sentul"
+  },
+  {
+    "name": "Ramada Suites Bukit Ceylon, Kuala Lumpur",
+    "slug": "ramada-suites-bukit-ceylon-kuala-lumpur"
+  },
+  {
+    "name": "Ramah Pavilion Teluk Kumbar",
+    "slug": "ramah-pavilion-teluk-kumbar"
+  },
+  {
+    "name": "Razak City Residences, Kuala Lumpur",
+    "slug": "razak-city-residences-kuala-lumpur"
+  },
+  {
+    "name": "Regalia Condominium, Kuala Lumpur",
+    "slug": "regalia-condominium-kuala-lumpur"
+  },
+  {
+    "name": "Regalia Residence, Kuala Lumpur",
+    "slug": "regalia-residence-kuala-lumpur"
+  },
+  {
+    "name": "Reizz Residence, Kuala Lumpur",
+    "slug": "reizz-residence-kuala-lumpur"
+  },
+  {
+    "name": "Renai Jelutong, Shah Alam",
+    "slug": "renai-jelutong-shah-alam"
+  },
+  {
+    "name": "Res 280 Condominium Selayang",
+    "slug": "res-280-condominium-selayang"
+  },
+  {
+    "name": "Res280 Selayang, Batu Caves",
+    "slug": "res280-selayang-batu-caves"
+  },
+  {
+    "name": "Residence Sunway Belfield, Kuala Lumpur",
+    "slug": "residence-sunway-belfield-kuala-lumpur"
+  },
+  {
+    "name": "Residency Palma Bukit Mertajam",
+    "slug": "residency-palma-bukit-mertajam"
+  },
+  {
+    "name": "Residensi Adelia 3, Kajang",
+    "slug": "residensi-adelia-3-kajang"
+  },
+  {
+    "name": "Residensi Adelia, Kajang",
+    "slug": "residensi-adelia-kajang"
+  },
+  {
+    "name": "Residensi Alamanda, Kuala Lumpur",
+    "slug": "residensi-alamanda-kuala-lumpur"
+  },
+  {
+    "name": "Residensi Alami, Shah Alam",
+    "slug": "residensi-alami-shah-alam"
+  },
+  {
+    "name": "Residensi Amansuri City Sentral",
+    "slug": "residensi-amansuri-city-sentral"
+  },
+  {
+    "name": "Residensi Bintang Bukit Jalil, Kuala Lumpur",
+    "slug": "residensi-bintang-bukit-jalil-kuala-lumpur"
+  },
+  {
+    "name": "Residensi Desa Satumas, Kuala Lumpur",
+    "slug": "residensi-desa-satumas-kuala-lumpur"
+  },
+  {
+    "name": "Residensi Emas, Kajang",
+    "slug": "residensi-emas-kajang"
+  },
+  {
+    "name": "Residensi Jubilee Bukit Bintang",
+    "slug": "residensi-jubilee-bukit-bintang"
+  },
+  {
+    "name": "Residensi Kepongmas, Kuala Lumpur",
+    "slug": "residensi-kepongmas-kuala-lumpur"
+  },
+  {
+    "name": "Residensi Kerinchi",
+    "slug": "residensi-kerinchi"
+  },
+  {
+    "name": "Residensi Klia, Nilai",
+    "slug": "residensi-klia-nilai"
+  },
+  {
+    "name": "Residensi Laman Sari, Batu Caves",
+    "slug": "residensi-laman-sari-batu-caves"
+  },
+  {
+    "name": "Residensi Lambaian Dua, Kajang",
+    "slug": "residensi-lambaian-dua-kajang"
+  },
+  {
+    "name": "Residensi Lena, Shah Alam",
+    "slug": "residensi-lena-shah-alam"
+  },
+  {
+    "name": "Residensi Lili, Nilai",
+    "slug": "residensi-lili-nilai"
+  },
+  {
+    "name": "Residensi Medan, Petaling Jaya",
+    "slug": "residensi-medan-petaling-jaya"
+  },
+  {
+    "name": "Residensi Melor Bangi, Bangi",
+    "slug": "residensi-melor-bangi-bangi"
+  },
+  {
+    "name": "Residensi Metro, Kepong",
+    "slug": "residensi-metro-kepong"
+  },
+  {
+    "name": "Residensi Mutiara, Kajang",
+    "slug": "residensi-mutiara-kajang"
+  },
+  {
+    "name": "Residensi Ostia, Bangi",
+    "slug": "residensi-ostia-bangi"
+  },
+  {
+    "name": "Residensi Pandanmas 2, Kuala Lumpur",
+    "slug": "residensi-pandanmas-2-kuala-lumpur"
+  },
+  {
+    "name": "Residensi Permai, Kajang",
+    "slug": "residensi-permai-kajang"
+  },
+  {
+    "name": "Residensi Platinum Teratai, Kuala Lumpur",
+    "slug": "residensi-platinum-teratai-kuala-lumpur"
+  },
+  {
+    "name": "Residensi Pr1ma Kajang Utama, Kajang",
+    "slug": "residensi-pr1ma-kajang-utama-kajang"
+  },
+  {
+    "name": "Residensi Prima Pokok Mangga",
+    "slug": "residensi-prima-pokok-mangga"
+  },
+  {
+    "name": "Residensi Rampai 2, Kuala Lumpur",
+    "slug": "residensi-rampai-2-kuala-lumpur"
+  },
+  {
+    "name": "Residensi Riamas, Kuala Lumpur",
+    "slug": "residensi-riamas-kuala-lumpur"
+  },
+  {
+    "name": "Residensi Rimbun Canopy Hills, Kajang",
+    "slug": "residensi-rimbun-canopy-hills-kajang"
+  },
+  {
+    "name": "Residensi Rimbunan Petaling Sri Petaling",
+    "slug": "residensi-rimbunan-petaling-sri-petaling"
+  },
+  {
+    "name": "Residensi Sateria Sasar Sungai Besi",
+    "slug": "residensi-sateria-sasar-sungai-besi"
+  },
+  {
+    "name": "Residensi Sateria, Kuala Lumpur",
+    "slug": "residensi-sateria-kuala-lumpur"
+  },
+  {
+    "name": "Residensi Selayang Damai",
+    "slug": "residensi-selayang-damai"
+  },
+  {
+    "name": "Residensi Seni Sepang",
+    "slug": "residensi-seni-sepang"
+  },
+  {
+    "name": "Residensi Seri Wahyu, Batu Caves",
+    "slug": "residensi-seri-wahyu-batu-caves"
+  },
+  {
+    "name": "Residensi Suasana Damai, Petaling Jaya",
+    "slug": "residensi-suasana-damai-petaling-jaya"
+  },
+  {
+    "name": "Residensi Suasana, Petaling Jaya",
+    "slug": "residensi-suasana-petaling-jaya"
+  },
+  {
+    "name": "Residensi Zamrud, Kajang",
+    "slug": "residensi-zamrud-kajang"
+  },
+  {
+    "name": "Revo Aurora Place Bukit Jalil",
+    "slug": "revo-aurora-place-bukit-jalil"
+  },
+  {
+    "name": "Riana Dutamas Segambut",
+    "slug": "riana-dutamas-segambut"
+  },
+  {
+    "name": "Riana Green, Petaling Jaya",
+    "slug": "riana-green-petaling-jaya"
+  },
+  {
+    "name": "Rica Residence, Sentul",
+    "slug": "rica-residence-sentul"
+  },
+  {
+    "name": "Ridgefield Residences, Kajang",
+    "slug": "ridgefield-residences-kajang"
+  },
+  {
+    "name": "Ridzuan Condominium, Petaling Jaya",
+    "slug": "ridzuan-condominium-petaling-jaya"
+  },
+  {
+    "name": "Rimba Residensi, Seremban",
+    "slug": "rimba-residensi-seremban"
+  },
+  {
+    "name": "Ritze Perdana 1, Petaling Jaya",
+    "slug": "ritze-perdana-1-petaling-jaya"
+  },
+  {
+    "name": "Ritze Perdana 2, Petaling Jaya",
+    "slug": "ritze-perdana-2-petaling-jaya"
+  },
+  {
+    "name": "Riveria City Brickfields, Kuala Lumpur",
+    "slug": "riveria-city-brickfields-kuala-lumpur"
+  },
+  {
+    "name": "Rooms At Backgate Of Taylor Lakeside University",
+    "slug": "rooms-at-backgate-of-taylor-lakeside-university"
+  },
+  {
+    "name": "Royal Domain Sri Putramas 2, Kuala Lumpur",
+    "slug": "royal-domain-sri-putramas-2-kuala-lumpur"
+  },
+  {
+    "name": "Royalle Condominium Segambut",
+    "slug": "royalle-condominium-segambut"
+  },
+  {
+    "name": "Rubica Apartment Butterworth",
+    "slug": "rubica-apartment-butterworth"
+  },
+  {
+    "name": "Ryan Miho, Petaling Jaya",
+    "slug": "ryan-miho-petaling-jaya"
+  },
+  {
+    "name": "Safira, Seremban",
+    "slug": "safira-seremban"
+  },
+  {
+    "name": "Saraka Apartment, Puchong",
+    "slug": "saraka-apartment-puchong"
+  },
+  {
+    "name": "Saujana Residency, Subang Jaya",
+    "slug": "saujana-residency-subang-jaya"
+  },
+  {
+    "name": "Saujana Ria Apartment, Kepong",
+    "slug": "saujana-ria-apartment-kepong"
+  },
+  {
+    "name": "Saujana Tropika S2 Heights, Seremban",
+    "slug": "saujana-tropika-s2-heights-seremban"
+  },
+  {
+    "name": "Savanna Executive Suites, Dengkil",
+    "slug": "savanna-executive-suites-dengkil"
+  },
+  {
+    "name": "Saville Dlake, Puchong",
+    "slug": "saville-dlake-puchong"
+  },
+  {
+    "name": "Saville, Kajang",
+    "slug": "saville-kajang"
+  },
+  {
+    "name": "Savio Riana Dutamas Segambut",
+    "slug": "savio-riana-dutamas-segambut"
+  },
+  {
+    "name": "Savvy Riana Dutamas 2 Segambut",
+    "slug": "savvy-riana-dutamas-2-segambut"
+  },
+  {
+    "name": "Scenaria North Kiara Segambut",
+    "slug": "scenaria-north-kiara-segambut"
+  },
+  {
+    "name": "Season Garden, Kuala Lumpur",
+    "slug": "season-garden-kuala-lumpur"
+  },
+  {
+    "name": "Seasons Garden Residence Wangsa Maju",
+    "slug": "seasons-garden-residence-wangsa-maju"
+  },
+  {
+    "name": "Seksyen 10 Putra Heights, Subang Jaya",
+    "slug": "seksyen-10-putra-heights-subang-jaya"
+  },
+  {
+    "name": "Seksyen 13, Shah Alam",
+    "slug": "seksyen-13-shah-alam"
+  },
+  {
+    "name": "Seksyen 15 Bandar Baru, Bangi",
+    "slug": "seksyen-15-bandar-baru-bangi"
+  },
+  {
+    "name": "Seksyen 1a, Petaling Jaya",
+    "slug": "seksyen-1a-petaling-jaya"
+  },
+  {
+    "name": "Seksyen 4 Bandar Baru, Bangi",
+    "slug": "seksyen-4-bandar-baru-bangi"
+  },
+  {
+    "name": "Seksyen 7, Shah Alam",
+    "slug": "seksyen-7-shah-alam"
+  },
+  {
+    "name": "Selangorku Pr1ma Lakefront Homes, Cyberjaya",
+    "slug": "selangorku-pr1ma-lakefront-homes-cyberjaya"
+  },
+  {
+    "name": "Selesa I Resort Apartment, Kajang",
+    "slug": "selesa-i-resort-apartment-kajang"
+  },
+  {
+    "name": "Semarak Apartment, Puchong",
+    "slug": "semarak-apartment-puchong"
+  },
+  {
+    "name": "Senada Residence Bukit Kiara",
+    "slug": "senada-residence-bukit-kiara"
+  },
+  {
+    "name": "Sensory Residence Southville City, Dengkil",
+    "slug": "sensory-residence-southville-city-dengkil"
+  },
+  {
+    "name": "Sentral Suites Kl",
+    "slug": "sentral-suites-kl"
+  },
+  {
+    "name": "Sentral Suites, Kuala Lumpur",
+    "slug": "sentral-suites-kuala-lumpur"
+  },
+  {
+    "name": "Sentrovue Service Apartment B",
+    "slug": "sentrovue-service-apartment-b"
+  },
+  {
+    "name": "Sentul",
+    "slug": "sentul"
+  },
+  {
+    "name": "Sentul Point Suites Apartment, Sentul",
+    "slug": "sentul-point-suites-apartment-sentul"
+  },
+  {
+    "name": "Sentul Point, Sentul",
+    "slug": "sentul-point-sentul"
+  },
+  {
+    "name": "Sentul Village Condominium, Sentul",
+    "slug": "sentul-village-condominium-sentul"
+  },
+  {
+    "name": "Sentul Village, Kuala Lumpur",
+    "slug": "sentul-village-kuala-lumpur"
+  },
+  {
+    "name": "Serdang Perdana, Seri Kembangan",
+    "slug": "serdang-perdana-seri-kembangan"
+  },
+  {
+    "name": "Serdang Skyvillas, Seri Kembangan",
+    "slug": "serdang-skyvillas-seri-kembangan"
+  },
+  {
+    "name": "Seremban",
+    "slug": "seremban"
+  },
+  {
+    "name": "Seremban 3, Seremban",
+    "slug": "seremban-3-seremban"
+  },
+  {
+    "name": "Seremban Putra Apartments, Seremban",
+    "slug": "seremban-putra-apartments-seremban"
+  },
+  {
+    "name": "Serenia Anisa Sepang",
+    "slug": "serenia-anisa-sepang"
+  },
+  {
+    "name": "Seri Cempaka Service Suites, Cheras",
+    "slug": "seri-cempaka-service-suites-cheras"
+  },
+  {
+    "name": "Seri Riana Residence Wangsa Maju",
+    "slug": "seri-riana-residence-wangsa-maju"
+  },
+  {
+    "name": "Seri Serindit Apartment, Melaka",
+    "slug": "seri-serindit-apartment-melaka"
+  },
+  {
+    "name": "Seri Topaz, Puchong",
+    "slug": "seri-topaz-puchong"
+  },
+  {
+    "name": "Serin Residency, Cyberjaya",
+    "slug": "serin-residency-cyberjaya"
+  },
+  {
+    "name": "Serini Melawati",
+    "slug": "serini-melawati"
+  },
+  {
+    "name": "Serini Melawati, Kuala Lumpur",
+    "slug": "serini-melawati-kuala-lumpur"
+  },
+  {
+    "name": "Serini Melawati, Taman Melawati",
+    "slug": "serini-melawati-taman-melawati"
+  },
+  {
+    "name": "Setapak",
+    "slug": "setapak"
+  },
+  {
+    "name": "Setapak Green, Kuala Lumpur",
+    "slug": "setapak-green-kuala-lumpur"
+  },
+  {
+    "name": "Setia Alam, Shah Alam",
+    "slug": "setia-alam-shah-alam"
+  },
+  {
+    "name": "Setia Alamsari, Kajang",
+    "slug": "setia-alamsari-kajang"
+  },
+  {
+    "name": "Setia City Residences, Shah Alam",
+    "slug": "setia-city-residences-shah-alam"
+  },
+  {
+    "name": "Setia Eco Glades, Cyberjaya",
+    "slug": "setia-eco-glades-cyberjaya"
+  },
+  {
+    "name": "Setia Impian, Shah Alam",
+    "slug": "setia-impian-shah-alam"
+  },
+  {
+    "name": "Setia Sky Residences, Kuala Lumpur",
+    "slug": "setia-sky-residences-kuala-lumpur"
+  },
+  {
+    "name": "Setia Utama, Shah Alam",
+    "slug": "setia-utama-shah-alam"
+  },
+  {
+    "name": "Sfera Residency, Seri Kembangan",
+    "slug": "sfera-residency-seri-kembangan"
+  },
+  {
+    "name": "Shaftsbury Square, Cyberjaya",
+    "slug": "shaftsbury-square-cyberjaya"
+  },
+  {
+    "name": "Shah Alam",
+    "slug": "shah-alam"
+  },
+  {
+    "name": "Silk Residence, Cheras",
+    "slug": "silk-residence-cheras"
+  },
+  {
+    "name": "Silk Sky, Seri Kembangan",
+    "slug": "silk-sky-seri-kembangan"
+  },
+  {
+    "name": "Simfoni 2 Bandar Teknologi, Kajang",
+    "slug": "simfoni-2-bandar-teknologi-kajang"
+  },
+  {
+    "name": "Simfoni Perdana, Puncak Alam",
+    "slug": "simfoni-perdana-puncak-alam"
+  },
+  {
+    "name": "Sky Awani 1, Kuala Lumpur",
+    "slug": "sky-awani-1-kuala-lumpur"
+  },
+  {
+    "name": "Sky Awani 2, Sentul",
+    "slug": "sky-awani-2-sentul"
+  },
+  {
+    "name": "Sky Awani 3, Kuala Lumpur",
+    "slug": "sky-awani-3-kuala-lumpur"
+  },
+  {
+    "name": "Sky Meridien, Sentul",
+    "slug": "sky-meridien-sentul"
+  },
+  {
+    "name": "Sky Park, Cyberjaya",
+    "slug": "sky-park-cyberjaya"
+  },
+  {
+    "name": "Skyblox Skysanctuary, Kuala Lumpur",
+    "slug": "skyblox-skysanctuary-kuala-lumpur"
+  },
+  {
+    "name": "Skylake Residence, Puchong",
+    "slug": "skylake-residence-puchong"
+  },
+  {
+    "name": "Skyline, Kuala Lumpur",
+    "slug": "skyline-kuala-lumpur"
+  },
+  {
+    "name": "Skyluxe On The Park Bukit Jalil",
+    "slug": "skyluxe-on-the-park-bukit-jalil"
+  },
+  {
+    "name": "Skyville 8, Kuala Lumpur",
+    "slug": "skyville-8-kuala-lumpur"
+  },
+  {
+    "name": "Solaris Dutamas Dutamas",
+    "slug": "solaris-dutamas-dutamas"
+  },
+  {
+    "name": "Solstice, Cyberjaya",
+    "slug": "solstice-cyberjaya"
+  },
+  {
+    "name": "Sophia Condominium, Mont Kiara",
+    "slug": "sophia-condominium-mont-kiara"
+  },
+  {
+    "name": "South View Bangsar South",
+    "slug": "south-view-bangsar-south"
+  },
+  {
+    "name": "Southbank Residence Old Klang Road",
+    "slug": "southbank-residence-old-klang-road"
+  },
+  {
+    "name": "Southlink Lifestyle Apartments Bangsar South",
+    "slug": "southlink-lifestyle-apartments-bangsar-south"
+  },
+  {
+    "name": "Springfield Residences Setia Ecohill 2, Semenyih",
+    "slug": "springfield-residences-setia-ecohill-2-semenyih"
+  },
+  {
+    "name": "Sqwhere Service Apartments Sungai Buloh",
+    "slug": "sqwhere-service-apartments-sungai-buloh"
+  },
+  {
+    "name": "Sri Acappella Serviced Apartments, Shah Alam",
+    "slug": "sri-acappella-serviced-apartments-shah-alam"
+  },
+  {
+    "name": "Sri Anggerik 1, Puchong",
+    "slug": "sri-anggerik-1-puchong"
+  },
+  {
+    "name": "Sri Bayu Apartment, Cheras",
+    "slug": "sri-bayu-apartment-cheras"
+  },
+  {
+    "name": "Sri Bayu Apartment, Puchong",
+    "slug": "sri-bayu-apartment-puchong"
+  },
+  {
+    "name": "Sri Camellia Apartment, Puchong",
+    "slug": "sri-camellia-apartment-puchong"
+  },
+  {
+    "name": "Sri Cempaka Apartment, Kajang",
+    "slug": "sri-cempaka-apartment-kajang"
+  },
+  {
+    "name": "Sri Emas Bukit Bintang, Kuala Lumpur",
+    "slug": "sri-emas-bukit-bintang-kuala-lumpur"
+  },
+  {
+    "name": "Sri Jati 2 Condominium",
+    "slug": "sri-jati-2-condominium"
+  },
+  {
+    "name": "Sri Jati Ii, Kuala Lumpur",
+    "slug": "sri-jati-ii-kuala-lumpur"
+  },
+  {
+    "name": "Sri Mutiara Sungai Besi",
+    "slug": "sri-mutiara-sungai-besi"
+  },
+  {
+    "name": "Sri Penaga Apartment, Puchong",
+    "slug": "sri-penaga-apartment-puchong"
+  },
+  {
+    "name": "Sri Putramas, Kuala Lumpur",
+    "slug": "sri-putramas-kuala-lumpur"
+  },
+  {
+    "name": "Ss 4, Petaling Jaya",
+    "slug": "ss-4-petaling-jaya"
+  },
+  {
+    "name": "Ss12, Subang Jaya",
+    "slug": "ss12-subang-jaya"
+  },
+  {
+    "name": "Ss14, Subang Jaya",
+    "slug": "ss14-subang-jaya"
+  },
+  {
+    "name": "Ss15, Subang Jaya",
+    "slug": "ss15-subang-jaya"
+  },
+  {
+    "name": "Starz Valley, Nilai",
+    "slug": "starz-valley-nilai"
+  },
+  {
+    "name": "Stonor 3, Kuala Lumpur",
+    "slug": "stonor-3-kuala-lumpur"
+  },
+  {
+    "name": "Straits Court Condominium, Melaka",
+    "slug": "straits-court-condominium-melaka"
+  },
+  {
+    "name": "Suasana Sentral Loft, Kuala Lumpur",
+    "slug": "suasana-sentral-loft-kuala-lumpur"
+  },
+  {
+    "name": "Subang Jaya",
+    "slug": "subang-jaya"
+  },
+  {
+    "name": "Subang Olives, Subang Jaya",
+    "slug": "subang-olives-subang-jaya"
+  },
+  {
+    "name": "Sungai Petani",
+    "slug": "sungai-petani"
+  },
+  {
+    "name": "Sunsuria Tangerine Suites Sepang",
+    "slug": "sunsuria-tangerine-suites-sepang"
+  },
+  {
+    "name": "Sunway Avila Wangsa Maju",
+    "slug": "sunway-avila-wangsa-maju"
+  },
+  {
+    "name": "Sunway Cassia Penang",
+    "slug": "sunway-cassia-penang"
+  },
+  {
+    "name": "Sunway Gandaria, Bangi",
+    "slug": "sunway-gandaria-bangi"
+  },
+  {
+    "name": "Sunway Geo Residences, Subang Jaya",
+    "slug": "sunway-geo-residences-subang-jaya"
+  },
+  {
+    "name": "Suria Garden, Puchong",
+    "slug": "suria-garden-puchong"
+  },
+  {
+    "name": "Suria Jaya, Shah Alam",
+    "slug": "suria-jaya-shah-alam"
+  },
+  {
+    "name": "Suria Jelatek Residence Ampang Hilir",
+    "slug": "suria-jelatek-residence-ampang-hilir"
+  },
+  {
+    "name": "Suria Rafflesia, Shah Alam",
+    "slug": "suria-rafflesia-shah-alam"
+  },
+  {
+    "name": "Suriaman 3 Labu",
+    "slug": "suriaman-3-labu"
+  },
+  {
+    "name": "Suriaman 3, Seremban",
+    "slug": "suriaman-3-seremban"
+  },
+  {
+    "name": "Suriamas Condominium, Petaling Jaya",
+    "slug": "suriamas-condominium-petaling-jaya"
+  },
+  {
+    "name": "Symphony Heights, Batu Caves",
+    "slug": "symphony-heights-batu-caves"
+  },
+  {
+    "name": "Symphony Tower, Seri Kembangan",
+    "slug": "symphony-tower-seri-kembangan"
+  },
+  {
+    "name": "Taman Akasia, Semenyih",
+    "slug": "taman-akasia-semenyih"
+  },
+  {
+    "name": "Taman Ampang Tinggi Kuala Pilah",
+    "slug": "taman-ampang-tinggi-kuala-pilah"
+  },
+  {
+    "name": "Taman Bagan Lallang Butterworth",
+    "slug": "taman-bagan-lallang-butterworth"
+  },
+  {
+    "name": "Taman Bertam Impian, Melaka",
+    "slug": "taman-bertam-impian-melaka"
+  },
+  {
+    "name": "Taman Botanika Residen Sitiawan",
+    "slug": "taman-botanika-residen-sitiawan"
+  },
+  {
+    "name": "Taman Bukit Mewah, Kajang",
+    "slug": "taman-bukit-mewah-kajang"
+  },
+  {
+    "name": "Taman Bukit Segar, Cheras",
+    "slug": "taman-bukit-segar-cheras"
+  },
+  {
+    "name": "Taman Dagang, Ampang",
+    "slug": "taman-dagang-ampang"
+  },
+  {
+    "name": "Taman Desa Cheras, Kuala Lumpur",
+    "slug": "taman-desa-cheras-kuala-lumpur"
+  },
+  {
+    "name": "Taman Desa Indah, Nilai",
+    "slug": "taman-desa-indah-nilai"
+  },
+  {
+    "name": "Taman Emas, Dengkil",
+    "slug": "taman-emas-dengkil"
+  },
+  {
+    "name": "Taman Gading Batu Gajah",
+    "slug": "taman-gading-batu-gajah"
+  },
+  {
+    "name": "Taman Impian Putra, Port Dickson",
+    "slug": "taman-impian-putra-port-dickson"
+  },
+  {
+    "name": "Taman Intan Delima Simpang Ampat",
+    "slug": "taman-intan-delima-simpang-ampat"
+  },
+  {
+    "name": "Taman Iringan Bayu, Seremban",
+    "slug": "taman-iringan-bayu-seremban"
+  },
+  {
+    "name": "Taman Ixora Sepang",
+    "slug": "taman-ixora-sepang"
+  },
+  {
+    "name": "Taman Kepong, Kuala Lumpur",
+    "slug": "taman-kepong-kuala-lumpur"
+  },
+  {
+    "name": "Taman Kirby Labu",
+    "slug": "taman-kirby-labu"
+  },
+  {
+    "name": "Taman Klang Jaya, Klang",
+    "slug": "taman-klang-jaya-klang"
+  },
+  {
+    "name": "Taman Klang Ria, Klang",
+    "slug": "taman-klang-ria-klang"
+  },
+  {
+    "name": "Taman Klebang Mutiara Chemor Perak",
+    "slug": "taman-klebang-mutiara-chemor-perak"
+  },
+  {
+    "name": "Taman Lagenda Teluk Intan",
+    "slug": "taman-lagenda-teluk-intan"
+  },
+  {
+    "name": "Taman Lembah Keramat, Kuala Lumpur",
+    "slug": "taman-lembah-keramat-kuala-lumpur"
+  },
+  {
+    "name": "Taman Mambau Baru, Seremban",
+    "slug": "taman-mambau-baru-seremban"
+  },
+  {
+    "name": "Taman Mengkibol Kluang",
+    "slug": "taman-mengkibol-kluang"
+  },
+  {
+    "name": "Taman Merdeka Jaya Batu Berendam",
+    "slug": "taman-merdeka-jaya-batu-berendam"
+  },
+  {
+    "name": "Taman Muda, Ampang",
+    "slug": "taman-muda-ampang"
+  },
+  {
+    "name": "Taman Nusaputra, Puchong",
+    "slug": "taman-nusaputra-puchong"
+  },
+  {
+    "name": "Taman Nusari Aman, Seremban",
+    "slug": "taman-nusari-aman-seremban"
+  },
+  {
+    "name": "Taman Oakland, Seremban",
+    "slug": "taman-oakland-seremban"
+  },
+  {
+    "name": "Taman Pd Jasmin, Port Dickson",
+    "slug": "taman-pd-jasmin-port-dickson"
+  },
+  {
+    "name": "Taman Puchong Indah, Puchong",
+    "slug": "taman-puchong-indah-puchong"
+  },
+  {
+    "name": "Taman Pusat Kepong, Kepong",
+    "slug": "taman-pusat-kepong-kepong"
+  },
+  {
+    "name": "Taman Putra Perdana, Puchong",
+    "slug": "taman-putra-perdana-puchong"
+  },
+  {
+    "name": "Taman Putra Prima, Puchong",
+    "slug": "taman-putra-prima-puchong"
+  },
+  {
+    "name": "Taman Ruby, Dengkil",
+    "slug": "taman-ruby-dengkil"
+  },
+  {
+    "name": "Taman Saujana Kapar",
+    "slug": "taman-saujana-kapar"
+  },
+  {
+    "name": "Taman Sejati Bukit Mertajam",
+    "slug": "taman-sejati-bukit-mertajam"
+  },
+  {
+    "name": "Taman Semarak Warisan Sepang",
+    "slug": "taman-semarak-warisan-sepang"
+  },
+  {
+    "name": "Taman Sendayu, Rawang",
+    "slug": "taman-sendayu-rawang"
+  },
+  {
+    "name": "Taman Sentosa Perdana, Klang",
+    "slug": "taman-sentosa-perdana-klang"
+  },
+  {
+    "name": "Taman Serdang Raya, Seri Kembangan",
+    "slug": "taman-serdang-raya-seri-kembangan"
+  },
+  {
+    "name": "Taman Seri Mahkota Sitiawan",
+    "slug": "taman-seri-mahkota-sitiawan"
+  },
+  {
+    "name": "Taman Seri Minang, Cheras",
+    "slug": "taman-seri-minang-cheras"
+  },
+  {
+    "name": "Taman Setapak, Kuala Lumpur",
+    "slug": "taman-setapak-kuala-lumpur"
+  },
+  {
+    "name": "Taman Sri Gadong, Klang",
+    "slug": "taman-sri-gadong-klang"
+  },
+  {
+    "name": "Taman Sri Mewah, Klang",
+    "slug": "taman-sri-mewah-klang"
+  },
+  {
+    "name": "Taman Sri Muda, Shah Alam",
+    "slug": "taman-sri-muda-shah-alam"
+  },
+  {
+    "name": "Taman Sri Segambut, Kuala Lumpur",
+    "slug": "taman-sri-segambut-kuala-lumpur"
+  },
+  {
+    "name": "Taman Sri Serdang, Seri Kembangan",
+    "slug": "taman-sri-serdang-seri-kembangan"
+  },
+  {
+    "name": "Taman Sutera, Kajang",
+    "slug": "taman-sutera-kajang"
+  },
+  {
+    "name": "Taman Taming Mutiara, Kajang",
+    "slug": "taman-taming-mutiara-kajang"
+  },
+  {
+    "name": "Taman Tanjong, Port Dickson",
+    "slug": "taman-tanjong-port-dickson"
+  },
+  {
+    "name": "Taman Tasek Mewah Ipoh",
+    "slug": "taman-tasek-mewah-ipoh"
+  },
+  {
+    "name": "Taman Tasik Prima, Puchong",
+    "slug": "taman-tasik-prima-puchong"
+  },
+  {
+    "name": "Taman Tasik Puchong, Puchong",
+    "slug": "taman-tasik-puchong-puchong"
+  },
+  {
+    "name": "Taman Tiara Sendayan Labu",
+    "slug": "taman-tiara-sendayan-labu"
+  },
+  {
+    "name": "Taman Tropika 2, Kajang",
+    "slug": "taman-tropika-2-kajang"
+  },
+  {
+    "name": "Taman Vista Emas, Kajang",
+    "slug": "taman-vista-emas-kajang"
+  },
+  {
+    "name": "Tamarind Suites, Cyberjaya",
+    "slug": "tamarind-suites-cyberjaya"
+  },
+  {
+    "name": "Tambun Royale City Bukit Tambun",
+    "slug": "tambun-royale-city-bukit-tambun"
+  },
+  {
+    "name": "Tanjong Puteri Apartment Pasir Gudang",
+    "slug": "tanjong-puteri-apartment-pasir-gudang"
+  },
+  {
+    "name": "Tanjung Kampung Damai, Rawang",
+    "slug": "tanjung-kampung-damai-rawang"
+  },
+  {
+    "name": "Telok Panglima Garang Selangor",
+    "slug": "telok-panglima-garang-selangor"
+  },
+  {
+    "name": "The Academia, Seri Kembangan",
+    "slug": "the-academia-seri-kembangan"
+  },
+  {
+    "name": "The Address Ii, Kuala Lumpur",
+    "slug": "the-address-ii-kuala-lumpur"
+  },
+  {
+    "name": "The Amber Residences Telok Panglima Garang",
+    "slug": "the-amber-residences-telok-panglima-garang"
+  },
+  {
+    "name": "The Arc, Cyberjaya",
+    "slug": "the-arc-cyberjaya"
+  },
+  {
+    "name": "The Arcuz, Petaling Jaya",
+    "slug": "the-arcuz-petaling-jaya"
+  },
+  {
+    "name": "The Azure Residences, Petaling Jaya",
+    "slug": "the-azure-residences-petaling-jaya"
+  },
+  {
+    "name": "The Birch, Kuala Lumpur",
+    "slug": "the-birch-kuala-lumpur"
+  },
+  {
+    "name": "The Clio 2 Residences, Putrajaya",
+    "slug": "the-clio-2-residences-putrajaya"
+  },
+  {
+    "name": "The Clovers Sungai Ara",
+    "slug": "the-clovers-sungai-ara"
+  },
+  {
+    "name": "The Domain, Cyberjaya",
+    "slug": "the-domain-cyberjaya"
+  },
+  {
+    "name": "The Elements, Ampang",
+    "slug": "the-elements-ampang"
+  },
+  {
+    "name": "The Era Segambut",
+    "slug": "the-era-segambut"
+  },
+  {
+    "name": "The Galleria Klang Sentral",
+    "slug": "the-galleria-klang-sentral"
+  },
+  {
+    "name": "The Grand Kelana Damansara Suites, Petaling Jaya",
+    "slug": "the-grand-kelana-damansara-suites-petaling-jaya"
+  },
+  {
+    "name": "The Grand Sofo, Petaling Jaya",
+    "slug": "the-grand-sofo-petaling-jaya"
+  },
+  {
+    "name": "The Haute Gurney, Kuala Lumpur",
+    "slug": "the-haute-gurney-kuala-lumpur"
+  },
+  {
+    "name": "The Heron Residency, Puchong",
+    "slug": "the-heron-residency-puchong"
+  },
+  {
+    "name": "The Hipster, Kuala Lumpur",
+    "slug": "the-hipster-kuala-lumpur"
+  },
+  {
+    "name": "The Holmes 2 Bandar Tun Razak",
+    "slug": "the-holmes-2-bandar-tun-razak"
+  },
+  {
+    "name": "The Loft Zetapark, Setapak",
+    "slug": "the-loft-zetapark-setapak"
+  },
+  {
+    "name": "The Lumayan, Cheras",
+    "slug": "the-lumayan-cheras"
+  },
+  {
+    "name": "The Majestic Ipoh",
+    "slug": "the-majestic-ipoh"
+  },
+  {
+    "name": "The Mark, Cheras",
+    "slug": "the-mark-cheras"
+  },
+  {
+    "name": "The Netizen, Cheras",
+    "slug": "the-netizen-cheras"
+  },
+  {
+    "name": "The Oasis Gelugor",
+    "slug": "the-oasis-gelugor"
+  },
+  {
+    "name": "The Olive Sepang",
+    "slug": "the-olive-sepang"
+  },
+  {
+    "name": "The Pano, Kuala Lumpur",
+    "slug": "the-pano-kuala-lumpur"
+  },
+  {
+    "name": "The Parque Residences Telok Panglima Garang",
+    "slug": "the-parque-residences-telok-panglima-garang"
+  },
+  {
+    "name": "The Place, Cyberjaya",
+    "slug": "the-place-cyberjaya"
+  },
+  {
+    "name": "The Rainz Bukit Jalil",
+    "slug": "the-rainz-bukit-jalil"
+  },
+  {
+    "name": "The Ridge, Setapak",
+    "slug": "the-ridge-setapak"
+  },
+  {
+    "name": "The Scott Garden Old Klang Road",
+    "slug": "the-scott-garden-old-klang-road"
+  },
+  {
+    "name": "The Square One City, Subang Jaya",
+    "slug": "the-square-one-city-subang-jaya"
+  },
+  {
+    "name": "The Tate Taman Eko Botani 2 Johor",
+    "slug": "the-tate-taman-eko-botani-2-johor"
+  },
+  {
+    "name": "The Vale Sutera Damansara, Petaling Jaya",
+    "slug": "the-vale-sutera-damansara-petaling-jaya"
+  },
+  {
+    "name": "The Valley Residences Skysierra Setiawangsa",
+    "slug": "the-valley-residences-skysierra-setiawangsa"
+  },
+  {
+    "name": "The Veo, Setapak",
+    "slug": "the-veo-setapak"
+  },
+  {
+    "name": "The Zizz Damansara Damai",
+    "slug": "the-zizz-damansara-damai"
+  },
+  {
+    "name": "The Zizz, Petaling Jaya",
+    "slug": "the-zizz-petaling-jaya"
+  },
+  {
+    "name": "Third Avenue, Cyberjaya",
+    "slug": "third-avenue-cyberjaya"
+  },
+  {
+    "name": "Tiara Damansara",
+    "slug": "tiara-damansara"
+  },
+  {
+    "name": "Tiara Imperio Residence, Kajang",
+    "slug": "tiara-imperio-residence-kajang"
+  },
+  {
+    "name": "Tiara Mutiara 2, Kuala Lumpur",
+    "slug": "tiara-mutiara-2-kuala-lumpur"
+  },
+  {
+    "name": "Tiara Mutiara Condominium, Kuala Lumpur",
+    "slug": "tiara-mutiara-condominium-kuala-lumpur"
+  },
+  {
+    "name": "Tiara Park Homes, Kajang",
+    "slug": "tiara-park-homes-kajang"
+  },
+  {
+    "name": "Tiara Sendayan, Seremban",
+    "slug": "tiara-sendayan-seremban"
+  },
+  {
+    "name": "Timurbay Suites Kuantan",
+    "slug": "timurbay-suites-kuantan"
+  },
+  {
+    "name": "Titiwangsa Sentral Condominium",
+    "slug": "titiwangsa-sentral-condominium"
+  },
+  {
+    "name": "Tr Residence",
+    "slug": "tr-residence"
+  },
+  {
+    "name": "Tr Residence Titiwangsa, Kuala Lumpur",
+    "slug": "tr-residence-titiwangsa-kuala-lumpur"
+  },
+  {
+    "name": "Traders Garden, Cheras",
+    "slug": "traders-garden-cheras"
+  },
+  {
+    "name": "Trefoil, Shah Alam",
+    "slug": "trefoil-shah-alam"
+  },
+  {
+    "name": "Trinity Aquata Sungai Besi",
+    "slug": "trinity-aquata-sungai-besi"
+  },
+  {
+    "name": "Trio By Setia, Klang",
+    "slug": "trio-by-setia-klang"
+  },
+  {
+    "name": "Trio Permai, Seri Kembangan",
+    "slug": "trio-permai-seri-kembangan"
+  },
+  {
+    "name": "Trion, Cheras",
+    "slug": "trion-cheras"
+  },
+  {
+    "name": "Tropicana Aman 1 Telok Panglima Garang",
+    "slug": "tropicana-aman-1-telok-panglima-garang"
+  },
+  {
+    "name": "Tropicana Gardens, Petaling Jaya",
+    "slug": "tropicana-gardens-petaling-jaya"
+  },
+  {
+    "name": "Ttdi Adina, Shah Alam",
+    "slug": "ttdi-adina-shah-alam"
+  },
+  {
+    "name": "Tulip Residence, Shah Alam",
+    "slug": "tulip-residence-shah-alam"
+  },
+  {
+    "name": "Twinz Residences, Puchong",
+    "slug": "twinz-residences-puchong"
+  },
+  {
+    "name": "Uni Suites Kampar",
+    "slug": "uni-suites-kampar"
+  },
+  {
+    "name": "United Point Residence Segambut",
+    "slug": "united-point-residence-segambut"
+  },
+  {
+    "name": "Univ 360 Place, Seri Kembangan",
+    "slug": "univ-360-place-seri-kembangan"
+  },
+  {
+    "name": "University Tower",
+    "slug": "university-tower"
+  },
+  {
+    "name": "Univillage, Semenyih",
+    "slug": "univillage-semenyih"
+  },
+  {
+    "name": "Usj 2, Subang Jaya",
+    "slug": "usj-2-subang-jaya"
+  },
+  {
+    "name": "V Residensi 2",
+    "slug": "v-residensi-2"
+  },
+  {
+    "name": "Verticas Residensi, Kuala Lumpur",
+    "slug": "verticas-residensi-kuala-lumpur"
+  },
+  {
+    "name": "Verve Suites Old Klang Road",
+    "slug": "verve-suites-old-klang-road"
+  },
+  {
+    "name": "Villa Kesuma Beranang",
+    "slug": "villa-kesuma-beranang"
+  },
+  {
+    "name": "Villa Makmur Dutamas",
+    "slug": "villa-makmur-dutamas"
+  },
+  {
+    "name": "Villa Pavilion, Seri Kembangan",
+    "slug": "villa-pavilion-seri-kembangan"
+  },
+  {
+    "name": "Villa Putra Condominium Chow Kit",
+    "slug": "villa-putra-condominium-chow-kit"
+  },
+  {
+    "name": "Villa Tanjung Permai Batu Kawan",
+    "slug": "villa-tanjung-permai-batu-kawan"
+  },
+  {
+    "name": "Villa Tropika, Cheras",
+    "slug": "villa-tropika-cheras"
+  },
+  {
+    "name": "Villamas Apartment, Puchong",
+    "slug": "villamas-apartment-puchong"
+  },
+  {
+    "name": "Vision City, Nilai",
+    "slug": "vision-city-nilai"
+  },
+  {
+    "name": "Vision Residence, Puchong",
+    "slug": "vision-residence-puchong"
+  },
+  {
+    "name": "Vista Alam, Shah Alam",
+    "slug": "vista-alam-shah-alam"
+  },
+  {
+    "name": "Vista Bangi Condominium, Kajang",
+    "slug": "vista-bangi-condominium-kajang"
+  },
+  {
+    "name": "Vista Impiana Apartment, Seri Kembangan",
+    "slug": "vista-impiana-apartment-seri-kembangan"
+  },
+  {
+    "name": "Vista Lavender, Puchong",
+    "slug": "vista-lavender-puchong"
+  },
+  {
+    "name": "Vista Millenium, Puchong",
+    "slug": "vista-millenium-puchong"
+  },
+  {
+    "name": "Vista Millennium Condominium, Puchong",
+    "slug": "vista-millennium-condominium-puchong"
+  },
+  {
+    "name": "Vista Perdana Pandan Perdana",
+    "slug": "vista-perdana-pandan-perdana"
+  },
+  {
+    "name": "Vista Pinggiran, Seri Kembangan",
+    "slug": "vista-pinggiran-seri-kembangan"
+  },
+  {
+    "name": "Vista Prima, Puchong",
+    "slug": "vista-prima-puchong"
+  },
+  {
+    "name": "Vivo Executive Apartment Bandar Cassia",
+    "slug": "vivo-executive-apartment-bandar-cassia"
+  },
+  {
+    "name": "Vivo Residential Old Klang Road",
+    "slug": "vivo-residential-old-klang-road"
+  },
+  {
+    "name": "Vue Residences Titiwangsa",
+    "slug": "vue-residences-titiwangsa"
+  },
+  {
+    "name": "Waldorf Tower, Sri Hartamas",
+    "slug": "waldorf-tower-sri-hartamas"
+  },
+  {
+    "name": "Wangsa Heights Condominium, Ampang",
+    "slug": "wangsa-heights-condominium-ampang"
+  },
+  {
+    "name": "Wangsa Metroview Wangsa Maju",
+    "slug": "wangsa-metroview-wangsa-maju"
+  },
+  {
+    "name": "Warisan Permai Sepang",
+    "slug": "warisan-permai-sepang"
+  },
+  {
+    "name": "Windows On The Park, Cheras",
+    "slug": "windows-on-the-park-cheras"
+  },
+  {
+    "name": "Xania Reflexion, Puchong",
+    "slug": "xania-reflexion-puchong"
+  },
+  {
+    "name": "Yolo Signature Suites, Bandar Sunway",
+    "slug": "yolo-signature-suites-bandar-sunway"
+  },
+  {
+    "name": "You Residences, Cheras",
+    "slug": "you-residences-cheras"
+  },
+  {
+    "name": "You Vista, Cheras",
+    "slug": "you-vista-cheras"
+  },
+  {
+    "name": "Youth City Residence, Nilai",
+    "slug": "youth-city-residence-nilai"
+  },
+  {
+    "name": "Zenith Residences, Petaling Jaya",
+    "slug": "zenith-residences-petaling-jaya"
+  },
+  {
+    "name": "Zenopy Residence, Seri Kembangan",
+    "slug": "zenopy-residence-seri-kembangan"
+  }
+]
