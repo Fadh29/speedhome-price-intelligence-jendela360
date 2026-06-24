@@ -872,12 +872,28 @@ if analysis_mode == "📊 Compare Areas":
         col_input_a, col_input_b = st.columns(2)
         with col_input_a:
             st.markdown("#### 📍 Area A")
-            area_a_select = st.selectbox(
-                "Pilih Area A:",
-                options=location_names,
-                index=index_a,
-                key="compare_area_a_sel"
+            search_method_a = st.radio(
+                "Pilih Metode Area A:",
+                ["Autocomplete", "Input URL"],
+                horizontal=True,
+                key="compare_search_method_a"
             )
+            if search_method_a == "Autocomplete":
+                area_a_select = st.selectbox(
+                    "Pilih Area A:",
+                    options=location_names,
+                    index=index_a,
+                    key="compare_area_a_sel"
+                )
+                slug_a_input = location_map[area_a_select]
+            else:
+                raw_input_a = st.text_input(
+                    "Masukkan URL SPEEDHOME Area A:",
+                    placeholder="https://speedhome.com/rent/mont-kiara",
+                    key="compare_area_a_url"
+                )
+                slug_a_input = raw_input_a.strip() if raw_input_a.strip() else "https://speedhome.com/rent/mont-kiara"
+                
             purchase_price_a = st.number_input(
                 "Harga Pembelian Properti Area A (RM):",
                 min_value=50000,
@@ -889,12 +905,28 @@ if analysis_mode == "📊 Compare Areas":
             )
         with col_input_b:
             st.markdown("#### 📍 Area B")
-            area_b_select = st.selectbox(
-                "Pilih Area B:",
-                options=location_names,
-                index=index_b,
-                key="compare_area_b_sel"
+            search_method_b = st.radio(
+                "Pilih Metode Area B:",
+                ["Autocomplete", "Input URL"],
+                horizontal=True,
+                key="compare_search_method_b"
             )
+            if search_method_b == "Autocomplete":
+                area_b_select = st.selectbox(
+                    "Pilih Area B:",
+                    options=location_names,
+                    index=index_b,
+                    key="compare_area_b_sel"
+                )
+                slug_b_input = location_map[area_b_select]
+            else:
+                raw_input_b = st.text_input(
+                    "Masukkan URL SPEEDHOME Area B:",
+                    placeholder="https://speedhome.com/rent/bangsar",
+                    key="compare_area_b_url"
+                )
+                slug_b_input = raw_input_b.strip() if raw_input_b.strip() else "https://speedhome.com/rent/bangsar"
+                
             purchase_price_b = st.number_input(
                 "Harga Pembelian Properti Area B (RM):",
                 min_value=50000,
@@ -909,8 +941,8 @@ if analysis_mode == "📊 Compare Areas":
         
     # Only trigger scraping when the user clicks the compare button
     if compare_btn:
-        slug_a = location_map[area_a_select]
-        slug_b = location_map[area_b_select]
+        slug_a = slug_a_input
+        slug_b = slug_b_input
         
         with st.spinner("Sedang mengambil dan menganalisis data untuk kedua area... Harap tunggu sebentar."):
             listings_a, name_a_scraped, url_a, err_a = scrape_speedhome_listings(slug_a)
