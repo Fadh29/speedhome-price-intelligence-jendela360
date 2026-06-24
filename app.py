@@ -299,10 +299,11 @@ if analysis_mode == "🏠 Single Area Analysis":
                 # Map name to slug
                 target_input = location_map[search_query]
             else:
-                target_input = st.text_input(
+                raw_input = st.text_input(
                     "Masukkan URL SPEEDHOME (contoh: https://speedhome.com/rent/mont-kiara):",
-                    value="https://speedhome.com/rent/mont-kiara"
+                    placeholder="https://speedhome.com/rent/mont-kiara"
                 )
+                target_input = raw_input.strip() if raw_input.strip() else "https://speedhome.com/rent/mont-kiara"
                 
         with col_action:
             st.write("")
