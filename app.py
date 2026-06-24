@@ -564,19 +564,6 @@ if analysis_mode == "🏠 Single Area Analysis" and "listings_data" in st.sessio
             "Rata-rata Ukuran (sqft)"
         ]
         
-        st.dataframe(
-            display_summary.style.format({
-                "Jumlah Unit": "{:.0f}",
-                "Rata-rata (RM)": "RM {:,.0f}",
-                "Median (RM)": "RM {:,.0f}",
-                "Modus (RM)": "RM {:,.0f}",
-                "Harga Wajar (RM)": "RM {:,.0f}",
-                "Rata-rata Ukuran (sqft)": "{:,.0f} sqft"
-            }),
-            use_container_width=True,
-            hide_index=True
-        )
-        
         # Download Summary as Excel
         def convert_summary_to_excel(summary_dataframe):
             output = io.BytesIO()
@@ -597,6 +584,21 @@ if analysis_mode == "🏠 Single Area Analysis" and "listings_data" in st.sessio
             mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
             use_container_width=True,
             key="download_summary"
+        )
+        
+        st.divider()
+        
+        st.dataframe(
+            display_summary.style.format({
+                "Jumlah Unit": "{:.0f}",
+                "Rata-rata (RM)": "RM {:,.0f}",
+                "Median (RM)": "RM {:,.0f}",
+                "Modus (RM)": "RM {:,.0f}",
+                "Harga Wajar (RM)": "RM {:,.0f}",
+                "Rata-rata Ukuran (sqft)": "{:,.0f} sqft"
+            }),
+            use_container_width=True,
+            hide_index=True
         )
         
     # TAB 2: Unit Listings Table
