@@ -32,6 +32,41 @@ def get_cached_data(target_input):
     return None
 
 
+# Helper to save successful scraped data to local JSON cache for offline fallback
+def save_cached_data(target_input, listings, area_name, search_url, cached_at=None):
+    if not target_input or not listings:
+        return
+    if target_input.startswith("http://") or target_input.startswith("https://"):
+        from scraper import extract_slug_from_url
+        slug, _ = extract_slug_from_url(target_input)
+    else:
+        slug = slugify(target_input)
+        
+    if not slug:
+        return
+        
+    if not cached_at:
+        cached_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        
+    cache_dir = os.path.join(os.path.dirname(__file__), "cached_data")
+    os.makedirs(cache_dir, exist_ok=True)
+    cache_path = os.path.join(cache_dir, f"{slug}.json")
+    
+    try:
+        cache_payload = {
+            "slug": slug,
+            "area_name": area_name,
+            "search_url": search_url,
+            "listings": listings,
+            "cached_at": cached_at
+        }
+        with open(cache_path, "w", encoding="utf-8") as f:
+            json.dump(cache_payload, f, indent=2, ensure_ascii=False)
+    except Exception as e:
+        print(f"Error writing cache for {slug}: {e}")
+
+
+
 # 1. Page Configuration & Theme Initialization
 st.set_page_config(
     page_title="SPEEDHOME Price Intelligence",
@@ -473,9 +508,11 @@ if analysis_mode == "🏠 Single Area Analysis" and scrape_btn:
                 listings = cached.get("listings", [])
                 area_name = cached.get("area_name", target_input)
                 search_url = cached.get("search_url", "")
+                cached_at = cached.get("cached_at")
                 error = None
                 is_fallback = True
                 st.session_state["is_cached_fallback"] = True
+                st.session_state["cached_at"] = cached_at
             else:
                 st.session_state["is_cached_fallback"] = False
         else:
@@ -499,7 +536,10 @@ if analysis_mode == "🏠 Single Area Analysis" and scrape_btn:
             st.session_state["listings_data"] = listings
             st.session_state["area_name"] = area_name
             st.session_state["search_url"] = search_url
-            st.session_state["last_scraped"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            scraped_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            st.session_state["last_scraped"] = scraped_time
+            if not is_fallback:
+                save_cached_data(target_input, listings, area_name, search_url, scraped_time)
 
 # Render metrics and tables if data exists for Single Area
 if analysis_mode == "🏠 Single Area Analysis" and "listings_data" in st.session_state and st.session_state["listings_data"]:
@@ -517,10 +557,14 @@ if analysis_mode == "🏠 Single Area Analysis" and "listings_data" in st.sessio
     
     # 6. KPI Cards Section
     st.markdown(f"### 📊 Ringkasan Analitik Area: **{area_name}**")
-    st.caption(f"Diambil dari halaman: [{search_url}]({search_url}) | Terakhir diperbarui: {last_scraped}")
     
     if st.session_state.get("is_cached_fallback", False):
+        cached_at = st.session_state.get("cached_at")
+        time_str = f"offline cache (Waktu simpan cache: {cached_at})" if cached_at else "offline cache"
+        st.caption(f"Diambil dari halaman: [{search_url}]({search_url}) | Sumber data: {time_str}")
         st.warning("⚠️ **Akses Terbatas Cloudflare:** Akses langsung ke SPEEDHOME dibatasi oleh proteksi Cloudflare Streamlit Cloud. Aplikasi otomatis memuat data historis ter-cache agar analisis tetap berjalan.")
+    else:
+        st.caption(f"Diambil dari halaman: [{search_url}]({search_url}) | Terakhir diperbarui (Live): {last_scraped}")
     
     kpi_col1, kpi_col2, kpi_col3, kpi_col4, kpi_col5 = st.columns(5)
     
@@ -1007,28 +1051,34 @@ if analysis_mode == "📊 Compare Areas":
         with st.spinner("Sedang mengambil dan menganalisis data untuk kedua area... Harap tunggu sebentar."):
             listings_a, name_a_scraped, url_a, err_a = scrape_speedhome_listings(slug_a)
             is_fallback_a = False
+            cached_at_a = None
             if err_a or not listings_a:
                 cached_a = get_cached_data(slug_a)
                 if cached_a:
                     listings_a = cached_a.get("listings", [])
                     name_a_scraped = cached_a.get("area_name", slug_a)
                     url_a = cached_a.get("search_url", "")
+                    cached_at_a = cached_a.get("cached_at")
                     err_a = None
                     is_fallback_a = True
                     
             listings_b, name_b_scraped, url_b, err_b = scrape_speedhome_listings(slug_b)
             is_fallback_b = False
+            cached_at_b = None
             if err_b or not listings_b:
                 cached_b = get_cached_data(slug_b)
                 if cached_b:
                     listings_b = cached_b.get("listings", [])
                     name_b_scraped = cached_b.get("area_name", slug_b)
                     url_b = cached_b.get("search_url", "")
+                    cached_at_b = cached_b.get("cached_at")
                     err_b = None
                     is_fallback_b = True
                     
             st.session_state["compare_is_fallback_a"] = is_fallback_a
             st.session_state["compare_is_fallback_b"] = is_fallback_b
+            st.session_state["compare_cached_at_a"] = cached_at_a
+            st.session_state["compare_cached_at_b"] = cached_at_b
             
             if err_a:
                 if "No structural data found" in err_a or "Failed to fetch content" in err_a:
@@ -1063,8 +1113,15 @@ if analysis_mode == "📊 Compare Areas":
                 st.session_state["compare_name_b"] = name_b_scraped
                 st.session_state["compare_url_a"] = url_a
                 st.session_state["compare_url_b"] = url_b
-                st.session_state["compare_scraped_at"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                scraped_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                st.session_state["compare_scraped_at"] = scraped_time
                 st.session_state["compare_results_ready"] = True
+                
+                # Dynamic Cache Writer for successfully scraped areas
+                if not is_fallback_a:
+                    save_cached_data(slug_a, listings_a, name_a_scraped, url_a, scraped_time)
+                if not is_fallback_b:
+                    save_cached_data(slug_b, listings_b, name_b_scraped, url_b, scraped_time)
                 
     if "compare_results_ready" in st.session_state and "compare_listings_a" in st.session_state:
         listings_a = st.session_state["compare_listings_a"]
@@ -1084,6 +1141,24 @@ if analysis_mode == "📊 Compare Areas":
                 d["price_yearly"] = pd.to_numeric(d["price_yearly"], errors="coerce")
                 d["sqft"] = pd.to_numeric(d["sqft"], errors="coerce")
                 
+        # Show data source status for each area
+        info_parts = []
+        if st.session_state.get("compare_is_fallback_a", False):
+            cached_at_a = st.session_state.get("compare_cached_at_a")
+            time_str_a = f"offline cache (Cache: {cached_at_a})" if cached_at_a else "offline cache"
+            info_parts.append(f"📍 **{name_a}**: {time_str_a}")
+        else:
+            info_parts.append(f"📍 **{name_a}**: data live ({scraped_at})")
+            
+        if st.session_state.get("compare_is_fallback_b", False):
+            cached_at_b = st.session_state.get("compare_cached_at_b")
+            time_str_b = f"offline cache (Cache: {cached_at_b})" if cached_at_b else "offline cache"
+            info_parts.append(f"📍 **{name_b}**: {time_str_b}")
+        else:
+            info_parts.append(f"📍 **{name_b}**: data live ({scraped_at})")
+            
+        st.caption(" | ".join(info_parts))
+        
         if st.session_state.get("compare_is_fallback_a", False) or st.session_state.get("compare_is_fallback_b", False):
             st.warning("⚠️ **Akses Terbatas Cloudflare:** Akses langsung ke SPEEDHOME untuk satu atau kedua area dibatasi oleh proteksi Cloudflare Streamlit Cloud. Aplikasi otomatis memuat data historis ter-cache agar perbandingan tetap berjalan.")
             
