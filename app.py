@@ -62,8 +62,6 @@ def save_cached_data(target_input, listings, area_name, search_url, cached_at=No
         }
         with open(cache_path, "w", encoding="utf-8") as f:
             json.dump(cache_payload, f, indent=2, ensure_ascii=False)
-        # Clear load_locations cache to dynamically promote the newly cached area to the recommended list
-        load_locations.clear()
     except Exception as e:
         print(f"Error writing cache for {slug}: {e}")
 
