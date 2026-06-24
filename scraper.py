@@ -61,18 +61,50 @@ def normalize_room_type(bedroom_count, type_str):
 
 def fetch_speedhome_page_source(url):
     """
-    Fetch raw HTML source of a URL using the requests library.
+    Fetch raw HTML source of a URL using curl (cross-platform) to bypass Cloudflare.
+    Falls back to requests if curl is not available.
     """
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-    }
+    import subprocess
+    import platform
+
+    user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+
+    # Use curl.exe on Windows, curl on Linux/Mac (Streamlit Cloud is Linux)
+    curl_cmd = 'curl.exe' if platform.system() == 'Windows' else 'curl'
+
     try:
+        cmd = [
+            curl_cmd, '-s', '-L',
+            '-A', user_agent,
+            '-H', 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+            '-H', 'Accept-Language: en-US,en;q=0.9',
+            '-H', 'Accept-Encoding: gzip, deflate',
+            '-H', 'Connection: keep-alive',
+            '--compressed',
+            url
+        ]
+        res = subprocess.run(cmd, capture_output=True, timeout=20)
+        if res.returncode == 0 and res.stdout:
+            return res.stdout
+    except (FileNotFoundError, subprocess.TimeoutExpired):
+        pass  # curl not available or timed out, fall back to requests
+
+    # Fallback: use requests with full headers
+    try:
+        headers = {
+            "User-Agent": user_agent,
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+            "Accept-Language": "en-US,en;q=0.9",
+            "Accept-Encoding": "gzip, deflate",
+            "Connection": "keep-alive",
+        }
         res = requests.get(url, headers=headers, timeout=15)
-        if res.status_code != 200:
-            return None
-        return res.content
+        if res.status_code == 200:
+            return res.content
     except requests.RequestException:
-        return None
+        pass
+
+    return None
 
 def scrape_speedhome_listings(search_input, delay=1.0):
     """
