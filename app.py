@@ -1294,6 +1294,6 @@ if analysis_mode == "📊 Compare Areas":
 # 8. Page Footer
 st.markdown("""
 <div class="footer">
-    SPEEDHOME Price Intelligence App • Dibuat untuk Technical Test CEO Office Jendela360 • 2026
+    SPEEDHOME Price Intelligence App • Dibuat untuk Technical Test CEO Office Jendela360 oleh Raihan Fadhlurahman • 2026
 </div>
 """, unsafe_allow_html=True)
