@@ -9,6 +9,29 @@ import io
 from scraper import scrape_speedhome_listings, slugify
 from build_locations import clean_slug_to_display_name
 
+# Helper to fetch data from local JSON cache if online scraping fails (e.g. Cloudflare blocks Streamlit Cloud IP)
+def get_cached_data(target_input):
+    if not target_input:
+        return None
+    if target_input.startswith("http://") or target_input.startswith("https://"):
+        from scraper import extract_slug_from_url
+        slug, _ = extract_slug_from_url(target_input)
+    else:
+        slug = slugify(target_input)
+        
+    if not slug:
+        return None
+        
+    cache_path = os.path.join(os.path.dirname(__file__), "cached_data", f"{slug}.json")
+    if os.path.exists(cache_path):
+        try:
+            with open(cache_path, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            pass
+    return None
+
+
 # 1. Page Configuration & Theme Initialization
 st.set_page_config(
     page_title="SPEEDHOME Price Intelligence",
@@ -439,8 +462,24 @@ if analysis_mode == "🏠 Single Area Analysis" and scrape_btn:
     with st.spinner("Mengumpulkan data sewa dari SPEEDHOME... Harap tunggu sebentar."):
         listings, area_name, search_url, error = scrape_speedhome_listings(target_input)
         
+        is_fallback = False
+        if error or not listings:
+            cached = get_cached_data(target_input)
+            if cached:
+                listings = cached.get("listings", [])
+                area_name = cached.get("area_name", target_input)
+                search_url = cached.get("search_url", "")
+                error = None
+                is_fallback = True
+                st.session_state["is_cached_fallback"] = True
+            else:
+                st.session_state["is_cached_fallback"] = False
+        else:
+            st.session_state["is_cached_fallback"] = False
+            
         if error:
             st.error(error)
+            st.info("ℹ️ **Koneksi terhambat:** Jika aplikasi berjalan online di Streamlit Cloud, Cloudflare membatasi IP server secara acak. Silakan masukkan area populer Malaysia lainnya yang ter-cache.")
         else:
             st.session_state["listings_data"] = listings
             st.session_state["area_name"] = area_name
@@ -464,6 +503,9 @@ if analysis_mode == "🏠 Single Area Analysis" and "listings_data" in st.sessio
     # 6. KPI Cards Section
     st.markdown(f"### 📊 Ringkasan Analitik Area: **{area_name}**")
     st.caption(f"Diambil dari halaman: [{search_url}]({search_url}) | Terakhir diperbarui: {last_scraped}")
+    
+    if st.session_state.get("is_cached_fallback", False):
+        st.warning("⚠️ **Akses Terbatas Cloudflare:** Akses langsung ke SPEEDHOME dibatasi oleh proteksi Cloudflare Streamlit Cloud. Aplikasi otomatis memuat data historis ter-cache agar analisis tetap berjalan.")
     
     kpi_col1, kpi_col2, kpi_col3, kpi_col4, kpi_col5 = st.columns(5)
     
@@ -946,12 +988,36 @@ if analysis_mode == "📊 Compare Areas":
         
         with st.spinner("Sedang mengambil dan menganalisis data untuk kedua area... Harap tunggu sebentar."):
             listings_a, name_a_scraped, url_a, err_a = scrape_speedhome_listings(slug_a)
+            is_fallback_a = False
+            if err_a or not listings_a:
+                cached_a = get_cached_data(slug_a)
+                if cached_a:
+                    listings_a = cached_a.get("listings", [])
+                    name_a_scraped = cached_a.get("area_name", slug_a)
+                    url_a = cached_a.get("search_url", "")
+                    err_a = None
+                    is_fallback_a = True
+                    
             listings_b, name_b_scraped, url_b, err_b = scrape_speedhome_listings(slug_b)
+            is_fallback_b = False
+            if err_b or not listings_b:
+                cached_b = get_cached_data(slug_b)
+                if cached_b:
+                    listings_b = cached_b.get("listings", [])
+                    name_b_scraped = cached_b.get("area_name", slug_b)
+                    url_b = cached_b.get("search_url", "")
+                    err_b = None
+                    is_fallback_b = True
+                    
+            st.session_state["compare_is_fallback_a"] = is_fallback_a
+            st.session_state["compare_is_fallback_b"] = is_fallback_b
             
             if err_a:
                 st.error(f"Error scraping Area A ({slug_a}): {err_a}")
+                st.info("ℹ️ **Koneksi terhambat:** Jika aplikasi berjalan online di Streamlit Cloud, Cloudflare membatasi IP server secara acak. Silakan masukkan area populer Malaysia lainnya yang ter-cache.")
             elif err_b:
                 st.error(f"Error scraping Area B ({slug_b}): {err_b}")
+                st.info("ℹ️ **Koneksi terhambat:** Jika aplikasi berjalan online di Streamlit Cloud, Cloudflare membatasi IP server secara acak. Silakan masukkan area populer Malaysia lainnya yang ter-cache.")
             else:
                 st.session_state["compare_listings_a"] = listings_a
                 st.session_state["compare_listings_b"] = listings_b
@@ -980,6 +1046,9 @@ if analysis_mode == "📊 Compare Areas":
                 d["price_yearly"] = pd.to_numeric(d["price_yearly"], errors="coerce")
                 d["sqft"] = pd.to_numeric(d["sqft"], errors="coerce")
                 
+        if st.session_state.get("compare_is_fallback_a", False) or st.session_state.get("compare_is_fallback_b", False):
+            st.warning("⚠️ **Akses Terbatas Cloudflare:** Akses langsung ke SPEEDHOME untuk satu atau kedua area dibatasi oleh proteksi Cloudflare Streamlit Cloud. Aplikasi otomatis memuat data historis ter-cache agar perbandingan tetap berjalan.")
+            
         if df_a.empty or df_b.empty:
             st.warning("⚠️ Salah satu area tidak memiliki listing aktif di SPEEDHOME untuk dianalisis.")
         else:
