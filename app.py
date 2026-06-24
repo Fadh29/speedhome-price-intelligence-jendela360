@@ -62,6 +62,8 @@ def save_cached_data(target_input, listings, area_name, search_url, cached_at=No
         }
         with open(cache_path, "w", encoding="utf-8") as f:
             json.dump(cache_payload, f, indent=2, ensure_ascii=False)
+        # Clear load_locations cache to dynamically promote the newly cached area to the recommended list
+        load_locations.clear()
     except Exception as e:
         print(f"Error writing cache for {slug}: {e}")
 
@@ -295,22 +297,51 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # 2. Load Autocomplete Locations Data
-RECOMMENDED_AREAS = [
-    {"name": "⭐️ [Recommended] Mont Kiara", "slug": "mont-kiara"},
-    {"name": "⭐️ [Recommended] Bangsar, Kuala Lumpur", "slug": "bangsar"},
-    {"name": "⭐️ [Recommended] Cheras, Kuala Lumpur", "slug": "cheras"},
-    {"name": "⭐️ [Recommended] Sentul", "slug": "sentul"},
-    {"name": "⭐️ [Recommended] Ampang, Kuala Lumpur", "slug": "ampang"},
-    {"name": "⭐️ [Recommended] Petaling Jaya", "slug": "petaling-jaya"},
-    {"name": "⭐️ [Recommended] Subang Jaya", "slug": "subang-jaya"},
-    {"name": "⭐️ [Recommended] Puchong", "slug": "puchong"},
-    {"name": "⭐️ [Recommended] Cyberjaya", "slug": "cyberjaya"},
-    {"name": "⭐️ [Recommended] Putrajaya, Wilayah Persekutuan", "slug": "putrajaya"}
-]
-
 @st.cache_data
 def load_locations():
-    cached_slugs = {item["slug"] for item in RECOMMENDED_AREAS}
+    cache_dir = os.path.join(os.path.dirname(__file__), "cached_data")
+    recommended = []
+    cached_slugs = set()
+    
+    # We always ensure the 10 popular ones are defined at least as backup
+    backup_popular = [
+        {"name": "Mont Kiara", "slug": "mont-kiara"},
+        {"name": "Bangsar, Kuala Lumpur", "slug": "bangsar"},
+        {"name": "Cheras, Kuala Lumpur", "slug": "cheras"},
+        {"name": "Sentul", "slug": "sentul"},
+        {"name": "Ampang, Kuala Lumpur", "slug": "ampang"},
+        {"name": "Petaling Jaya", "slug": "petaling-jaya"},
+        {"name": "Subang Jaya", "slug": "subang-jaya"},
+        {"name": "Puchong", "slug": "puchong"},
+        {"name": "Cyberjaya", "slug": "cyberjaya"},
+        {"name": "Putrajaya, Wilayah Persekutuan", "slug": "putrajaya"}
+    ]
+    
+    # Scan cached_data directory dynamically
+    if os.path.exists(cache_dir):
+        try:
+            for filename in sorted(os.listdir(cache_dir)):
+                if filename.endswith(".json"):
+                    slug = filename[:-5]
+                    file_path = os.path.join(cache_dir, filename)
+                    try:
+                        with open(file_path, "r", encoding="utf-8") as f:
+                            cache_payload = json.load(f)
+                            area_name = cache_payload.get("area_name", slug.replace('-', ' ').title())
+                            recommended.append({"name": f"⭐️ [Recommended] {area_name}", "slug": slug})
+                            cached_slugs.add(slug)
+                    except Exception:
+                        pass
+        except Exception:
+            pass
+            
+    # Add backup popular ones if they weren't found in cache files
+    for item in backup_popular:
+        if item["slug"] not in cached_slugs:
+            recommended.append({"name": f"⭐️ [Recommended] {item['name']}", "slug": item["slug"]})
+            cached_slugs.add(item["slug"])
+            
+    # Load rest of the locations from locations.json
     locations_file = "locations.json"
     other_locations = []
     if os.path.exists(locations_file):
@@ -320,7 +351,8 @@ def load_locations():
                 other_locations = [item for item in data if item.get("slug") not in cached_slugs]
         except Exception:
             pass
-    return RECOMMENDED_AREAS + other_locations
+            
+    return recommended + other_locations
 
 locations_list = load_locations()
 location_names = [loc["name"] for loc in locations_list]
