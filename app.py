@@ -260,28 +260,32 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # 2. Load Autocomplete Locations Data
+RECOMMENDED_AREAS = [
+    {"name": "⭐️ [Recommended] Mont Kiara", "slug": "mont-kiara"},
+    {"name": "⭐️ [Recommended] Bangsar, Kuala Lumpur", "slug": "bangsar"},
+    {"name": "⭐️ [Recommended] Cheras, Kuala Lumpur", "slug": "cheras"},
+    {"name": "⭐️ [Recommended] Sentul", "slug": "sentul"},
+    {"name": "⭐️ [Recommended] Ampang, Kuala Lumpur", "slug": "ampang"},
+    {"name": "⭐️ [Recommended] Petaling Jaya", "slug": "petaling-jaya"},
+    {"name": "⭐️ [Recommended] Subang Jaya", "slug": "subang-jaya"},
+    {"name": "⭐️ [Recommended] Puchong", "slug": "puchong"},
+    {"name": "⭐️ [Recommended] Cyberjaya", "slug": "cyberjaya"},
+    {"name": "⭐️ [Recommended] Putrajaya, Wilayah Persekutuan", "slug": "putrajaya"}
+]
+
 @st.cache_data
 def load_locations():
+    cached_slugs = {item["slug"] for item in RECOMMENDED_AREAS}
     locations_file = "locations.json"
+    other_locations = []
     if os.path.exists(locations_file):
         try:
             with open(locations_file, "r", encoding="utf-8") as f:
-                return json.load(f)
+                data = json.load(f)
+                other_locations = [item for item in data if item.get("slug") not in cached_slugs]
         except Exception:
             pass
-    # Basic fallback list if file doesn't exist
-    return [
-        {"name": "Mont Kiara, Kuala Lumpur", "slug": "mont-kiara"},
-        {"name": "Bangsar, Kuala Lumpur", "slug": "bangsar"},
-        {"name": "Cheras, Kuala Lumpur", "slug": "cheras"},
-        {"name": "Sentul, Kuala Lumpur", "slug": "sentul"},
-        {"name": "Ampang, Kuala Lumpur", "slug": "ampang"},
-        {"name": "Petaling Jaya, Selangor", "slug": "petaling-jaya"},
-        {"name": "Subang Jaya, Selangor", "slug": "subang-jaya"},
-        {"name": "Puchong, Selangor", "slug": "puchong"},
-        {"name": "Cyberjaya, Selangor", "slug": "cyberjaya"},
-        {"name": "Putrajaya, Wilayah Persekutuan", "slug": "putrajaya"}
-    ]
+    return RECOMMENDED_AREAS + other_locations
 
 locations_list = load_locations()
 location_names = [loc["name"] for loc in locations_list]
@@ -478,8 +482,19 @@ if analysis_mode == "🏠 Single Area Analysis" and scrape_btn:
             st.session_state["is_cached_fallback"] = False
             
         if error:
-            st.error(error)
-            st.info("ℹ️ **Koneksi terhambat:** Jika aplikasi berjalan online di Streamlit Cloud, Cloudflare membatasi IP server secara acak. Silakan masukkan area populer Malaysia lainnya yang ter-cache.")
+            # Check if this looks like a Cloudflare block
+            if "No structural data found" in error or "Failed to fetch content" in error:
+                st.error("⚠️ **Akses Live Diblokir oleh Cloudflare (Cloudflare Bot Protection)**")
+                st.markdown(f"""
+                Platform SPEEDHOME memblokir request otomatis dari server Streamlit Cloud.
+                
+                **Solusi:**
+                1. **Gunakan Area Ter-cache (Rekomendasi)**: Silakan pilih salah satu dari 10 area populer bertanda **⭐️ [Recommended]** (seperti Mont Kiara, Bangsar, Cheras, Sentul, Ampang, Petaling Jaya, Subang Jaya, Puchong, Cyberjaya, Putrajaya) di autocomplete dropdown.
+                2. **Jalankan Secara Lokal**: Unduh code repository ini dan jalankan `streamlit run app.py` di komputer lokal Anda untuk melakukan live scraping tanpa hambatan IP server.
+                """)
+            else:
+                st.error(error)
+                st.info("ℹ️ **Koneksi terhambat:** Jika aplikasi berjalan online di Streamlit Cloud, Cloudflare membatasi IP server secara acak. Silakan masukkan area populer Malaysia lainnya yang ter-cache.")
         else:
             st.session_state["listings_data"] = listings
             st.session_state["area_name"] = area_name
@@ -889,8 +904,11 @@ elif analysis_mode == "🏠 Single Area Analysis":
     <div style="text-align: center; padding: 60px 20px; margin: 40px 0; background: var(--secondary-background-color); border: 1px dashed rgba(128, 128, 128, 0.3); border-radius: 16px;">
         <div style="font-size: 3rem; margin-bottom: 16px;">🏠</div>
         <div style="font-size: 1.3rem; font-weight: 700; color: var(--text-color); font-family: 'Outfit', sans-serif; margin-bottom: 8px;">Belum ada data area yang ditampilkan</div>
-        <div style="font-size: 0.95rem; color: var(--text-color); opacity: 0.6; max-width: 450px; margin: 0 auto; line-height: 1.6;">
+        <div style="font-size: 0.95rem; color: var(--text-color); opacity: 0.6; max-width: 550px; margin: 0 auto; line-height: 1.6; margin-bottom: 15px;">
             Pilih area atau masukkan URL di atas, lalu tekan tombol <strong>🚀 Kumpulkan Data Harga</strong> untuk memulai analisis.
+        </div>
+        <div style="font-size: 0.85rem; color: #e65100; max-width: 550px; margin: 0 auto; line-height: 1.5; padding: 12px; background: rgba(230, 81, 0, 0.08); border-radius: 8px; border: 1px solid rgba(230, 81, 0, 0.2);">
+            ⚠️ <strong>Penting (Cloudflare):</strong> Live scraping langsung ke SPEEDHOME dibatasi pada server Streamlit Cloud. Silakan pilih salah satu dari 10 area bertanda <strong>⭐️ [Recommended]</strong> di autocomplete untuk menggunakan data offline ter-cache.
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -899,11 +917,11 @@ elif analysis_mode == "🏠 Single Area Analysis":
 if analysis_mode == "📊 Compare Areas":
     # Autocomplete indexing
     try:
-        index_a = location_names.index("Mont Kiara, Kuala Lumpur")
+        index_a = location_names.index("⭐️ [Recommended] Mont Kiara")
     except ValueError:
         index_a = 0
     try:
-        index_b = location_names.index("Bangsar, Kuala Lumpur")
+        index_b = location_names.index("⭐️ [Recommended] Bangsar, Kuala Lumpur")
     except ValueError:
         index_b = min(1, len(location_names) - 1)
         
@@ -1013,11 +1031,31 @@ if analysis_mode == "📊 Compare Areas":
             st.session_state["compare_is_fallback_b"] = is_fallback_b
             
             if err_a:
-                st.error(f"Error scraping Area A ({slug_a}): {err_a}")
-                st.info("ℹ️ **Koneksi terhambat:** Jika aplikasi berjalan online di Streamlit Cloud, Cloudflare membatasi IP server secara acak. Silakan masukkan area populer Malaysia lainnya yang ter-cache.")
+                if "No structural data found" in err_a or "Failed to fetch content" in err_a:
+                    st.error(f"⚠️ **Akses Area A ({slug_a}) Diblokir oleh Cloudflare (Cloudflare Bot Protection)**")
+                    st.markdown(f"""
+                    Platform SPEEDHOME memblokir request otomatis dari server Streamlit Cloud untuk **Area A**.
+                    
+                    **Solusi:**
+                    1. **Gunakan Area Ter-cache (Rekomendasi)**: Silakan pilih salah satu dari 10 area populer bertanda **⭐️ [Recommended]** (seperti Mont Kiara, Bangsar, Cheras, Sentul, Ampang, Petaling Jaya, Subang Jaya, Puchong, Cyberjaya, Putrajaya) di autocomplete dropdown.
+                    2. **Jalankan Secara Lokal**: Unduh code repository ini dan jalankan secara lokal untuk melakukan live scraping.
+                    """)
+                else:
+                    st.error(f"Error scraping Area A ({slug_a}): {err_a}")
+                    st.info("ℹ️ **Koneksi terhambat:** Jika aplikasi berjalan online di Streamlit Cloud, Cloudflare membatasi IP server secara acak. Silakan masukkan area populer Malaysia lainnya yang ter-cache.")
             elif err_b:
-                st.error(f"Error scraping Area B ({slug_b}): {err_b}")
-                st.info("ℹ️ **Koneksi terhambat:** Jika aplikasi berjalan online di Streamlit Cloud, Cloudflare membatasi IP server secara acak. Silakan masukkan area populer Malaysia lainnya yang ter-cache.")
+                if "No structural data found" in err_b or "Failed to fetch content" in err_b:
+                    st.error(f"⚠️ **Akses Area B ({slug_b}) Diblokir oleh Cloudflare (Cloudflare Bot Protection)**")
+                    st.markdown(f"""
+                    Platform SPEEDHOME memblokir request otomatis dari server Streamlit Cloud untuk **Area B**.
+                    
+                    **Solusi:**
+                    1. **Gunakan Area Ter-cache (Rekomendasi)**: Silakan pilih salah satu dari 10 area populer bertanda **⭐️ [Recommended]** (seperti Mont Kiara, Bangsar, Cheras, Sentul, Ampang, Petaling Jaya, Subang Jaya, Puchong, Cyberjaya, Putrajaya) di autocomplete dropdown.
+                    2. **Jalankan Secara Lokal**: Unduh code repository ini dan jalankan secara lokal untuk melakukan live scraping.
+                    """)
+                else:
+                    st.error(f"Error scraping Area B ({slug_b}): {err_b}")
+                    st.info("ℹ️ **Koneksi terhambat:** Jika aplikasi berjalan online di Streamlit Cloud, Cloudflare membatasi IP server secara acak. Silakan masukkan area populer Malaysia lainnya yang ter-cache.")
             else:
                 st.session_state["compare_listings_a"] = listings_a
                 st.session_state["compare_listings_b"] = listings_b
