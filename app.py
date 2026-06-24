@@ -62,6 +62,8 @@ def save_cached_data(target_input, listings, area_name, search_url, cached_at=No
         }
         with open(cache_path, "w", encoding="utf-8") as f:
             json.dump(cache_payload, f, indent=2, ensure_ascii=False)
+        # Clear load_locations cache to dynamically promote the newly cached area to the recommended list
+        load_locations.clear()
     except Exception as e:
         print(f"Error writing cache for {slug}: {e}")
 
@@ -383,10 +385,21 @@ if analysis_mode == "🏠 Single Area Analysis":
             )
             
             if search_method == "Pencarian Nama Area/Apartemen (Autocomplete)":
+                if "search_query_val" in st.session_state:
+                    old_val = st.session_state["search_query_val"]
+                    new_star_name = f"⭐️ [Recommended] {old_val}"
+                    if new_star_name in location_names:
+                        st.session_state["search_query_val"] = new_star_name
+                        
+                default_idx = 0
+                if "search_query_val" in st.session_state and st.session_state["search_query_val"] in location_names:
+                    default_idx = location_names.index(st.session_state["search_query_val"])
+
                 search_query = st.selectbox(
                     "Ketik dan Pilih Nama Area atau Apartemen (contoh: Mont Kiara):",
                     options=location_names,
-                    index=0
+                    index=default_idx,
+                    key="search_query_val"
                 )
                 # Map name to slug
                 target_input = location_map[search_query]
@@ -1013,10 +1026,20 @@ if analysis_mode == "📊 Compare Areas":
                 key="compare_search_method_a"
             )
             if search_method_a == "Autocomplete":
+                if "compare_area_a_sel" in st.session_state:
+                    old_val = st.session_state["compare_area_a_sel"]
+                    new_star_name = f"⭐️ [Recommended] {old_val}"
+                    if new_star_name in location_names:
+                        st.session_state["compare_area_a_sel"] = new_star_name
+                        
+                default_idx_a = index_a
+                if "compare_area_a_sel" in st.session_state and st.session_state["compare_area_a_sel"] in location_names:
+                    default_idx_a = location_names.index(st.session_state["compare_area_a_sel"])
+
                 area_a_select = st.selectbox(
                     "Pilih Area A:",
                     options=location_names,
-                    index=index_a,
+                    index=default_idx_a,
                     key="compare_area_a_sel"
                 )
                 slug_a_input = location_map[area_a_select]
@@ -1046,10 +1069,20 @@ if analysis_mode == "📊 Compare Areas":
                 key="compare_search_method_b"
             )
             if search_method_b == "Autocomplete":
+                if "compare_area_b_sel" in st.session_state:
+                    old_val = st.session_state["compare_area_b_sel"]
+                    new_star_name = f"⭐️ [Recommended] {old_val}"
+                    if new_star_name in location_names:
+                        st.session_state["compare_area_b_sel"] = new_star_name
+                        
+                default_idx_b = index_b
+                if "compare_area_b_sel" in st.session_state and st.session_state["compare_area_b_sel"] in location_names:
+                    default_idx_b = location_names.index(st.session_state["compare_area_b_sel"])
+
                 area_b_select = st.selectbox(
                     "Pilih Area B:",
                     options=location_names,
-                    index=index_b,
+                    index=default_idx_b,
                     key="compare_area_b_sel"
                 )
                 slug_b_input = location_map[area_b_select]
