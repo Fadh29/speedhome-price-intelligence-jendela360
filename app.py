@@ -111,23 +111,27 @@ st.markdown("""
     
     /* Tab Styling - Adaptive */
     .stTabs [data-baseweb="tab-list"] {
-        gap: 8px;
+        gap: 4px;
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        flex-wrap: nowrap;
+    }
+    .stTabs [data-baseweb="tab-list"]::-webkit-scrollbar {
+        display: none;
     }
     
     .stTabs [data-baseweb="tab"] {
-        height: 50px;
-        white-space: pre-wrap;
+        white-space: nowrap;
         background-color: var(--secondary-background-color) !important;
         border-radius: 8px 8px 0px 0px;
-        gap: 1px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 10px 16px;
         border: 1px solid rgba(128, 128, 128, 0.2) !important;
         font-weight: 600;
+        font-size: 0.85rem;
         color: var(--text-color) !important;
         opacity: 0.8;
+        flex-shrink: 0;
     }
     
     .stTabs [aria-selected="true"] {
@@ -135,6 +139,17 @@ st.markdown("""
         border-top: 3px solid #FF3366 !important;
         color: #FF3366 !important;
         opacity: 1 !important;
+    }
+    
+    /* Mobile responsive tabs */
+    @media (max-width: 768px) {
+        .stTabs [data-baseweb="tab"] {
+            padding: 8px 12px;
+            font-size: 0.75rem;
+        }
+        .stTabs [data-baseweb="tab-list"] {
+            gap: 2px;
+        }
     }
     
     /* Winner Hero Card styling - Adaptive */
@@ -511,11 +526,11 @@ if analysis_mode == "🏠 Single Area Analysis" and "listings_data" in st.sessio
             
     # Tabs layout for detailed views and innovations
     tab_summary, tab_listings, tab_charts, tab_roi, tab_insights = st.tabs([
-        "📋 Ringkasan Harga (Price Summary)",
-        "🔍 Daftar Unit Lengkap (Unit Listings)",
-        "📈 Visualisasi & Tren (Charts)",
-        "💰 Kalkulator ROI (Return on Investment)",
-        "💡 Smart Insights & AI"
+        "📋 Harga",
+        "🔍 Lengkap",
+        "📈 Tren",
+        "💰 ROI",
+        "💡 Insights"
     ])
     
     # TAB 1: Price Summary Table
