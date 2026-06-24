@@ -577,6 +577,28 @@ if analysis_mode == "🏠 Single Area Analysis" and "listings_data" in st.sessio
             hide_index=True
         )
         
+        # Download Summary as Excel
+        def convert_summary_to_excel(summary_dataframe):
+            output = io.BytesIO()
+            with pd.ExcelWriter(output, engine='openpyxl') as writer:
+                export_summary = summary_dataframe.copy()
+                export_summary.to_excel(writer, index=False, sheet_name='Ringkasan Harga')
+            return output.getvalue()
+        
+        summary_excel = convert_summary_to_excel(display_summary)
+        safe_area_name = "_".join(word.capitalize() for word in area_name.replace(",", "").split())
+        date_str = datetime.now().strftime("%Y%m%d")
+        summary_filename = f"SPEEDHOME_{safe_area_name}_Ringkasan_{date_str}.xlsx"
+        
+        st.download_button(
+            label=f"📥 Download Ringkasan: {summary_filename}",
+            data=summary_excel,
+            file_name=summary_filename,
+            mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            use_container_width=True,
+            key="download_summary"
+        )
+        
     # TAB 2: Unit Listings Table
     with tab_listings:
         st.markdown("#### Seluruh Unit yang Ditemukan di Area Ini")
