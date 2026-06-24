@@ -1,4 +1,4 @@
-import subprocess
+import requests
 import json
 import re
 import time
@@ -61,15 +61,18 @@ def normalize_room_type(bedroom_count, type_str):
 
 def fetch_speedhome_page_source(url):
     """
-    Fetch raw HTML source of a URL using curl.exe to bypass Cloudflare bot protection.
+    Fetch raw HTML source of a URL using the requests library.
     """
-    headers = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-    cmd = ['curl.exe', '-s', '-A', headers, url]
-    
-    res = subprocess.run(cmd, capture_output=True)
-    if res.returncode != 0:
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    }
+    try:
+        res = requests.get(url, headers=headers, timeout=15)
+        if res.status_code != 200:
+            return None
+        return res.content
+    except requests.RequestException:
         return None
-    return res.stdout
 
 def scrape_speedhome_listings(search_input, delay=1.0):
     """
