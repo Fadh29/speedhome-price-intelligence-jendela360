@@ -21,7 +21,7 @@ Berkas ini menyediakan dokumentasi teknis yang komprehensif bagi pengembang (dev
 
 ---
 
-## 2. Metodologi Web Scraping & Konsep Pengambilan Data (Untuk Orang Awam)
+## 2. Metodologi Web Scraping & Konsep Pengambilan Data
 
 Bagi Anda yang baru mempelajari pemrograman, *Web Scraping* adalah teknik otomatisasi untuk membaca halaman web eksternal dan mengambil informasi spesifik darinya untuk disimpan dalam basis data terstruktur.
 
